@@ -9,28 +9,47 @@ public class TTMovement : NetworkBehaviour {
 	public float TurnSpeed = 25.0f;
 	public float MoveSpeed = 25.0f;
 	private Vector3 PrevPos;
+	public GameObject shipController;
+	GameObject target;
+	int mode;
 
 	// Use this for initialization
 	void start() {
-		
+		//print ("Setting up: " + this.name);
+		//shipController = this.transform.GetChild (0).gameObject;
+		//shipController.SetActive (false);
 	}
 	// Update is called once per frame
 	void Update()
 	{
-		//if (isServer) {
-			move ();
-		//}
+		move ();
 	}
-
-	public void setPos(Vector3 point)
+	public void activateController (bool show) {
+		shipController.SetActive (show);
+	}
+	public void setMode (int mode) {
+		this.mode = mode;
+	}
+	public void setTarget (GameObject target) {
+		TargetPos = target.transform.position;
+		this.target = target;
+		setMoveTarget();
+	}
+	public void setPos (Vector3 point)
 	{
 		//Target = point;
 		TargetPos = point;
-		setTarget();
+		setMoveTarget();
 	}
+
+
 	void move()
 	{
-		TargetPos = TargetPos + Offset;
+		if (mode > 1) {
+			TargetPos = target.transform.position + Offset;
+		} else {
+			TargetPos = TargetPos + Offset;
+		}
 		var lookPos = TargetPos - transform.position;
 		lookPos.y = 0;
 		var rotation = Quaternion.LookRotation(lookPos);
@@ -39,8 +58,9 @@ public class TTMovement : NetworkBehaviour {
 		this.GetComponent<Rigidbody>().velocity = transform.forward * MoveSpeed * Time.deltaTime;
 	}
 
-	void setTarget()
+	void setMoveTarget()
 	{
+		
 		var lookPos = TargetPos - transform.position;
 		lookPos.y = 0;
 		var rotation = Quaternion.LookRotation(lookPos);
