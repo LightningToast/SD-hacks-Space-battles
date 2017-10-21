@@ -88,3 +88,5 @@ MonoBehaviour:
   playerNumber: 0
   shipList:
   - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
+  - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
+  spawnedShipList: []
