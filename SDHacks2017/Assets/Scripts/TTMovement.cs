@@ -107,5 +107,6 @@ public class TTMovement : NetworkBehaviour {
 	public void RpcSetName(int playerNum, int shipNum)
 	{
 		this.name = "Player" + playerNum + "Ship" + shipNum;
+		this.transform.parent = GameObject.Find ("ImageTarget").transform;
 	}
 }
