@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\JPInput.cs" />
+     <Compile Include="Assets\Scripts\JPTurret.cs" />
      <Compile Include="Assets\Scripts\TTMovement.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultSmartTerrainEventHandler.cs" />

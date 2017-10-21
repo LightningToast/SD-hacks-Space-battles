@@ -10,9 +10,11 @@ public class JPInput : NetworkBehaviour {
 	GameObject selectedShip;
 	int controlScheme = 0;
 	public GameObject[] shipList;
+	public GameObject[] spawnedShipList;
 	// Use this for initialization
 	void Start () {
 		if(isServer) {
+			spawnedShipList = new GameObject[shipList.Length];
 			marker = GameObject.Find("Marker");
 			for(int count = 0; count < shipList.Length; count ++) {
 				GameObject obj = (GameObject)Instantiate (shipList [count], new Vector3 (count * 10, transform.position.y, transform.position.z), transform.rotation);
@@ -22,6 +24,7 @@ public class JPInput : NetworkBehaviour {
 				//CmdSpawnShip (obj);
 				NetworkServer.Spawn (obj);
 				obj.GetComponent<TTMovement> ().RpcSetName (playerNumber, count);
+				spawnedShipList [count] = obj;
 			}
 
 		}
