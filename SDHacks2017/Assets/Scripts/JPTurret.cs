@@ -7,6 +7,8 @@ public class JPTurret : MonoBehaviour {
 	int direction = 1;
 	public float rotationSpeed;
 	public float maxDirection = 180.0f;
+	public float xDistance;
+	public float yDistance;
 	public GameObject target;
 	bool tracking = true;
 	// Use this for initialization
@@ -31,6 +33,15 @@ public class JPTurret : MonoBehaviour {
 			print(rotation);
 			float step = 10f * Time.deltaTime;
 			transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, step);
+		}
+	}
+	public void setTarget (GameObject obj) {
+		tracking = true;
+		target = obj;
+	}
+	public void getNearbyEnemies (GameObject[] enemies) {
+		for (int count = 0; count < enemies.Length; count ++) {
+			
 		}
 	}
 }

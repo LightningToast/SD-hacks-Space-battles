@@ -51,25 +51,27 @@ public class JPInput : NetworkBehaviour {
 							selectedShip = hit.collider.gameObject;
 							selectedShip.GetComponent<TTMovement> ().activateController (true);
 							CmdSetSelectedShip (hit.collider.gameObject.name);
+						} else {
+							if(controlScheme > 1) {
+								CmdSetTarget (hit.collider.gameObject.name);
+								CmdSetMode (controlScheme);
+
+								selectedShip.GetComponent<TTMovement> ().activateController (false);
+								selectedShip = null;
+								CmdClearSelectedShip ();
+								controlScheme = 0;
+							} else {
+								selectedShip.GetComponent<TTMovement>().activateController(false);
+								selectedShip = null;
+								CmdClearSelectedShip();
+								controlScheme = 0;
+							}
 						}
 					} else {
 						if (controlPanel != null){
 							controlPanel.GetComponent<Renderer> ().material.color = new Color (1F,1F,1F,1F);
 						}
-						if(controlScheme > 1) {
-							CmdSetTarget (hit.collider.gameObject.name);
-							CmdSetMode (controlScheme);
 
-							selectedShip.GetComponent<TTMovement> ().activateController (false);
-							selectedShip = null;
-							CmdClearSelectedShip ();
-							controlScheme = 0;
-						} else {
-							selectedShip.GetComponent<TTMovement>().activateController(false);
-							selectedShip = null;
-							CmdClearSelectedShip();
-							controlScheme = 0;
-						}
 					}
 				}
 				if (hit.collider.gameObject.name.Contains ("Control")) {
