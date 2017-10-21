@@ -15,13 +15,17 @@ public class TTMovement : NetworkBehaviour {
 
 	// Use this for initialization
 	void start() {
-		//print ("Setting up: " + this.name);
+		print ("Setting up: " + this.name);
 		//shipController = this.transform.GetChild (0).gameObject;
 		//shipController.SetActive (false);
 	}
 	// Update is called once per frame
 	void Update()
 	{
+		if(shipController == null) {
+			shipController = this.transform.GetChild (0).gameObject;
+			shipController.SetActive (false);
+		}
 		move ();
 	}
 	public void activateController (bool show) {
@@ -98,5 +102,10 @@ public class TTMovement : NetworkBehaviour {
                                       }*/
 		//this.transform.rotation
 		PrevPos = TargetPos;
+	}
+	[ClientRpc]
+	public void RpcSetName(int playerNum, int shipNum)
+	{
+		this.name = "Player" + playerNum + "Ship" + shipNum;
 	}
 }

@@ -17,10 +17,16 @@ public class JPInput : NetworkBehaviour {
 			for(int count = 0; count < shipList.Length; count ++) {
 				GameObject obj = (GameObject)Instantiate (shipList [count], new Vector3 (count * 10, transform.position.y, transform.position.z), transform.rotation);
 				obj.name = "Player" + playerNumber + "Ship" + count;
-				obj.GetComponent<TTMovement> ().shipController = obj.transform.GetChild (0).gameObject;
-				obj.transform.GetChild (0).gameObject.SetActive(false);
+				//obj.GetComponent<TTMovement> ().shipController = obj.transform.GetChild (0).gameObject;
+				//obj.transform.GetChild (0).gameObject.SetActive(false);
+				//CmdSpawnShip (obj);
 				NetworkServer.Spawn (obj);
+				obj.GetComponent<TTMovement> ().RpcSetName (playerNumber, count);
 			}
+
+		}
+		if (isLocalPlayer) {
+			
 		}
 	}
 	
@@ -76,6 +82,7 @@ public class JPInput : NetworkBehaviour {
 				//marker.transform.position = ray.GetPoint(rayDistance);
 				//print (ray.GetPoint (rayDistance));
 				if((selectedShip != null) && (controlScheme == 1)) {
+					print ("sending pos");
 					CmdSetLocation(ray.GetPoint (rayDistance));
 					CmdSetMode (1);
 					selectedShip.GetComponent<TTMovement> ().activateController (false);
@@ -93,6 +100,10 @@ public class JPInput : NetworkBehaviour {
 				}
 			}
 		}
+	}
+	[Command]
+	public void CmdSpawnShip (GameObject ship) {
+		NetworkServer.Spawn (ship);
 	}
 	[Command]
 	public void CmdSetSelectedShip (string name) {
