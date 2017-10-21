@@ -67,6 +67,8 @@ public class TTMovement : NetworkBehaviour {
 		
 		var lookPos = TargetPos - transform.position;
 		lookPos.y = 0;
+		print (TargetPos);
+		print (transform.position);
 		var rotation = Quaternion.LookRotation(lookPos);
 		print(rotation);
 		transform.rotation = rotation;

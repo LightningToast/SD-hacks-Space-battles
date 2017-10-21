@@ -6,11 +6,13 @@ using UnityEngine.Networking;
 public class JPInput : NetworkBehaviour {
 	Plane groundPlane = new Plane (new Vector3 (0, 0, 0), new Vector3 (-100, 0, -100), new Vector3 (100, 0, -100));
 	public GameObject marker;
+	public GameObject controlPanel;
 	public int playerNumber;
 	GameObject selectedShip;
 	int controlScheme = 0;
 	public GameObject[] shipList;
 	public GameObject[] spawnedShipList;
+	public Color picked;
 	// Use this for initialization
 	void Start () {
 		if(isServer) {
@@ -44,16 +46,20 @@ public class JPInput : NetworkBehaviour {
 			if (Physics.Raycast(ray, out hit)) {
 				if (hit.collider.gameObject.transform.name.Contains ("Ship")) {
 					if (hit.collider.gameObject.name.Contains ("Player" + playerNumber)) {
-						print ("PlayerControlled");
+						//print ("PlayerControlled");
 						if (selectedShip == null) {
 							selectedShip = hit.collider.gameObject;
 							selectedShip.GetComponent<TTMovement> ().activateController (true);
 							CmdSetSelectedShip (hit.collider.gameObject.name);
 						}
 					} else {
+						if (controlPanel != null){
+							controlPanel.GetComponent<Renderer> ().material.color = new Color (1F,1F,1F,1F);
+						}
 						if(controlScheme > 1) {
 							CmdSetTarget (hit.collider.gameObject.name);
 							CmdSetMode (controlScheme);
+
 							selectedShip.GetComponent<TTMovement> ().activateController (false);
 							selectedShip = null;
 							CmdClearSelectedShip ();
@@ -68,6 +74,9 @@ public class JPInput : NetworkBehaviour {
 				}
 				if (hit.collider.gameObject.name.Contains ("Control")) {
 					if(selectedShip != null) {
+						controlPanel = hit.collider.gameObject;
+						picked = new Color(0.5F, 0.5F, 0.5F, 1F);
+						controlPanel.GetComponent<Renderer> ().material.color = picked; //changing selected button's color
 						if (hit.collider.gameObject.name.Contains ("Move")) {
 							controlScheme = 1;
 
@@ -80,15 +89,16 @@ public class JPInput : NetworkBehaviour {
 						}
 					}
 				}
-				print(hit.collider.gameObject.name);
+				//print(hit.collider.gameObject.name);
 			} else if (groundPlane.Raycast (ray, out rayDistance)) {
 				//marker.transform.position = ray.GetPoint(rayDistance);
 				//print (ray.GetPoint (rayDistance));
 				if((selectedShip != null) && (controlScheme == 1)) {
-					print ("sending pos");
+					//print ("sending pos");
 					CmdSetLocation(ray.GetPoint (rayDistance));
 					CmdSetMode (1);
 					selectedShip.GetComponent<TTMovement> ().activateController (false);
+
 					selectedShip = null;
 					CmdClearSelectedShip ();
 					controlScheme = 0;
@@ -114,6 +124,9 @@ public class JPInput : NetworkBehaviour {
 	}
 	[Command]
 	public void CmdClearSelectedShip () {
+		if (controlPanel != null){
+			controlPanel.GetComponent<Renderer> ().material.color = new Color (0.8F,0.8F,0.8F,1F);
+		}
 		selectedShip = null;
 	}
 
@@ -129,7 +142,7 @@ public class JPInput : NetworkBehaviour {
 
 	[Command]
 	public void CmdSetLocation (Vector3 pos) {
-		print (pos);
+		//print (pos);
 		selectedShip.GetComponent<TTMovement> ().setPos (pos);
 		//marker.transform.position = pos;
 	}
