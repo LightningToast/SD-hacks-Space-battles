@@ -22,13 +22,17 @@ public class JPInput : NetworkBehaviour {
 			Debug.DrawRay (ray.origin, ray.direction * 100000, Color.yellow, 0.0f, false);
 			float rayDistance;
 			if (groundPlane.Raycast (ray, out rayDistance)) {
+				//marker.transform.position = ray.GetPoint(rayDistance);
+				//print (ray.GetPoint (rayDistance));
 				CmdSendLocation(ray.GetPoint (rayDistance));
 			}
 		}
 	}
 
 	[Command]
-	public void CmdSendLocation(Vector2 pos) {
-		marker.transform.position = pos;
+	public void CmdSendLocation(Vector3 pos) {
+		print (pos);
+		marker.GetComponent<TTMovement> ().setPos (pos);
+		//marker.transform.position = pos;
 	}
 }
