@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class JPFire : MonoBehaviour {
 	public GameObject laser;
@@ -26,6 +27,7 @@ public class JPFire : MonoBehaviour {
 					print (transform.right);
 					obj.GetComponent<Rigidbody> ().AddForce (transform.forward * 25);
 					Destroy (obj, 1f);
+					NetworkServer.Spawn (obj);
 					count = 0;
 				}
 			} else {
