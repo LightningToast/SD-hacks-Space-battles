@@ -54,12 +54,23 @@ public class TTMovement : NetworkBehaviour {
 		} else {
 			TargetPos = TargetPos + Offset;
 		}
-		var lookPos = TargetPos - transform.position;
-		lookPos.y = 0;
-		var rotation = Quaternion.LookRotation(lookPos);
-		//print (rotation);
-		transform.localRotation = Quaternion.RotateTowards(transform.rotation, rotation, Time.deltaTime * TurnSpeed);
-		this.GetComponent<Rigidbody>().velocity = transform.forward * MoveSpeed * Time.deltaTime;
+
+		//if it's still far just continue moving
+		if((Mathf.Abs(TargetPos.x-transform.position.x) > 1) || 
+			(Mathf.Abs(TargetPos.y-transform.position.y) > 1) || 
+			(Mathf.Abs(TargetPos.z-transform.position.z) > 1)){
+
+			var lookPos = TargetPos - transform.position;
+			lookPos.y = 0;
+			var rotation = Quaternion.LookRotation(lookPos);
+			//print (rotation);
+			transform.localRotation = Quaternion.RotateTowards(transform.rotation, rotation, Time.deltaTime * TurnSpeed);
+			this.GetComponent<Rigidbody>().velocity = transform.forward * MoveSpeed * Time.deltaTime;
+
+			//else manually do something else
+		}  else {
+			this.GetComponent<Rigidbody> ().velocity = Vector3.zero;
+		}
 	}
 
 	void setMoveTarget()
