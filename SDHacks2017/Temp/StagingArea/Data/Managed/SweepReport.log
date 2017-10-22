@@ -2,17 +2,550 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2248
-    Nested = 195
-    Interfaces = 142
-    Abstract Classes = 152
-    Generic Types = 83
-    Generic Interfaces = 6
-    Generic Abstract Classes = 3
-    Attributes = 174
-  Total Field Removals = 759
-  Total Method Removals = 12209
+  Total Type Removals = 2349
+    Nested = 199
+    Interfaces = 159
+    Abstract Classes = 183
+    Generic Types = 119
+    Generic Interfaces = 13
+    Generic Abstract Classes = 14
+    Attributes = 172
+  Total Field Removals = 777
+  Total Method Removals = 12766
 ---------------------------------------------------
+---------------------------------------------------
+Assembly: Google.ProtocolBuffers
+---------------------------------------------------
+Summary:
+  Total Type Removals = 106
+    Nested = 4
+    Interfaces = 17
+    Abstract Classes = 24
+    Generic Types = 37
+    Generic Interfaces = 7
+    Generic Abstract Classes = 11
+    Attributes = 1
+  Total Field Removals = 17
+  Total Method Removals = 366
+  References Removed = 0
+---------------------------------------------------
+    <PrivateImplementationDetails>{7e72fec7-f233-40ef-a895-81ad912b5e96}
+    Google.ProtocolBuffers.AbstractBuilder`2
+    Google.ProtocolBuffers.AbstractBuilderLite`2
+        Google.ProtocolBuffers.IBuilderLite.get_WeakDefaultInstanceForType()
+        Google.ProtocolBuffers.IBuilderLite.WeakBuild()
+        Google.ProtocolBuffers.IBuilderLite.WeakClear()
+        Google.ProtocolBuffers.IBuilderLite.WeakClone()
+        Google.ProtocolBuffers.IBuilderLite.WeakMergeFrom(Google.ProtocolBuffers.ByteString)
+        Google.ProtocolBuffers.IBuilderLite.WeakMergeFrom(Google.ProtocolBuffers.ByteString,Google.ProtocolBuffers.ExtensionRegistry)
+        Google.ProtocolBuffers.IBuilderLite.WeakMergeFrom(Google.ProtocolBuffers.ICodedInputStream)
+        Google.ProtocolBuffers.IBuilderLite.WeakMergeFrom(Google.ProtocolBuffers.IMessageLite)
+    Google.ProtocolBuffers.AbstractMessage`2
+    Google.ProtocolBuffers.AbstractMessageLite`2
+        Google.ProtocolBuffers.IMessageLite.get_WeakDefaultInstanceForType()
+        Google.ProtocolBuffers.IMessageLite.WeakToBuilder()
+        ToByteString()
+        WriteDelimitedTo(System.IO.Stream)
+        WriteTo(System.IO.Stream)
+    Google.ProtocolBuffers.Action`2
+    Google.ProtocolBuffers.ByteArray
+        CopyThreshold
+    Google.ProtocolBuffers.ByteString
+        AttachBytes(System.Byte[])
+        CopyFrom(System.Byte[])
+        CopyFrom(System.Byte[],System.Int32,System.Int32)
+        CopyFrom(System.String,System.Text.Encoding)
+        CopyFromUtf8(System.String)
+        CopyTo(System.Byte[],System.Int32)
+        FromBase64(System.String)
+        get_Empty()
+        get_IsEmpty()
+        get_Item(System.Int32)
+        get_Length()
+        ToBase64()
+        ToByteArray()
+        ToString(System.Text.Encoding)
+        ToStringUtf8()
+        WriteRawBytesTo(Google.ProtocolBuffers.CodedOutputStream)
+        WriteTo(System.IO.Stream)
+    Google.ProtocolBuffers.ByteString/CodedBuilder
+    Google.ProtocolBuffers.ByteString/Unsafe
+    Google.ProtocolBuffers.CodedInputStream
+        BufferSize
+        DefaultRecursionLimit
+        DefaultSizeLimit
+        .ctor(System.IO.Stream,System.Byte[])
+        CreateInstance(System.Byte[],System.Int32,System.Int32)
+        CreateInstance(System.IO.Stream,System.Byte[])
+        DecodeZigZag32(System.UInt32)
+        DecodeZigZag64(System.UInt64)
+        get_Position()
+        Google.ProtocolBuffers.ICodedInputStream.ReadMessageEnd()
+        Google.ProtocolBuffers.ICodedInputStream.ReadMessageStart()
+        ReadBool(System.Boolean&)
+        ReadBoolArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Boolean>)
+        ReadBytes(Google.ProtocolBuffers.ByteString&)
+        ReadBytesArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<Google.ProtocolBuffers.ByteString>)
+        ReadDouble(System.Double&)
+        ReadDoubleArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Double>)
+        ReadEnum(Google.ProtocolBuffers.IEnumLite&,System.Object&,Google.ProtocolBuffers.IEnumLiteMap)
+        ReadEnumArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<Google.ProtocolBuffers.IEnumLite>,System.Collections.Generic.ICollection`1<System.Object>&,Google.ProtocolBuffers.IEnumLiteMap)
+        ReadEnumArray<T>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<T>,System.Collections.Generic.ICollection`1<System.Object>&)
+        ReadFixed32(System.UInt32&)
+        ReadFixed32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt32>)
+        ReadFixed64(System.UInt64&)
+        ReadFixed64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt64>)
+        ReadGroup(System.Int32,Google.ProtocolBuffers.IBuilderLite,Google.ProtocolBuffers.ExtensionRegistry)
+        ReadGroupArray<T>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<T>,T,Google.ProtocolBuffers.ExtensionRegistry)
+        ReadInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadPrimitiveArray(Google.ProtocolBuffers.Descriptors.FieldType,System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Object>)
+        ReadPrimitiveField(Google.ProtocolBuffers.Descriptors.FieldType,System.Object&)
+        ReadSFixed32(System.Int32&)
+        ReadSFixed32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadSFixed64(System.Int64&)
+        ReadSFixed64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadSInt32(System.Int32&)
+        ReadSInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadSInt64(System.Int64&)
+        ReadSInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadString(System.String&)
+        ReadStringArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.String>)
+        ReadUInt32(System.UInt32&)
+        ReadUInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt32>)
+        ReadUInt64(System.UInt64&)
+        ReadUInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt64>)
+        ReadUnknownGroup(System.Int32,Google.ProtocolBuffers.IBuilderLite)
+        ResetSizeCounter()
+        SetRecursionLimit(System.Int32)
+        SetSizeLimit(System.Int32)
+    Google.ProtocolBuffers.CodedOutputStream
+        LittleEndian32Size
+        LittleEndian64Size
+        .ctor(System.IO.Stream,System.Byte[])
+        ComputeBoolSize(System.Int32,System.Boolean)
+        ComputeBoolSizeNoTag(System.Boolean)
+        ComputeBytesSize(System.Int32,Google.ProtocolBuffers.ByteString)
+        ComputeBytesSizeNoTag(Google.ProtocolBuffers.ByteString)
+        ComputeDoubleSize(System.Int32,System.Double)
+        ComputeDoubleSizeNoTag(System.Double)
+        ComputeFieldSize(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.Object)
+        ComputeFieldSizeNoTag(Google.ProtocolBuffers.Descriptors.FieldType,System.Object)
+        ComputeFixed32Size(System.Int32,System.UInt32)
+        ComputeFixed32SizeNoTag(System.UInt32)
+        ComputeFixed64Size(System.Int32,System.UInt64)
+        ComputeFixed64SizeNoTag(System.UInt64)
+        ComputeFloatSizeNoTag(System.Single)
+        ComputeGroupSize(System.Int32,Google.ProtocolBuffers.IMessageLite)
+        ComputeGroupSizeNoTag(Google.ProtocolBuffers.IMessageLite)
+        ComputeInt64SizeNoTag(System.Int64)
+        ComputeMessageSetExtensionSize(System.Int32,Google.ProtocolBuffers.IMessageLite)
+        ComputeMessageSizeNoTag(Google.ProtocolBuffers.IMessageLite)
+        ComputeRawMessageSetExtensionSize(System.Int32,Google.ProtocolBuffers.ByteString)
+        ComputeSFixed32Size(System.Int32,System.Int32)
+        ComputeSFixed32SizeNoTag(System.Int32)
+        ComputeSFixed64Size(System.Int32,System.Int64)
+        ComputeSFixed64SizeNoTag(System.Int64)
+        ComputeSInt32Size(System.Int32,System.Int32)
+        ComputeSInt32SizeNoTag(System.Int32)
+        ComputeSInt64Size(System.Int32,System.Int64)
+        ComputeSInt64SizeNoTag(System.Int64)
+        ComputeStringSize(System.Int32,System.String)
+        ComputeStringSizeNoTag(System.String)
+        ComputeUInt32Size(System.Int32,System.UInt32)
+        ComputeUInt32SizeNoTag(System.UInt32)
+        ComputeUInt64Size(System.Int32,System.UInt64)
+        ComputeUInt64SizeNoTag(System.UInt64)
+        ComputeUnknownGroupSize(System.Int32,Google.ProtocolBuffers.IMessageLite)
+        ComputeUnknownGroupSizeNoTag(Google.ProtocolBuffers.IMessageLite)
+        CreateInstance(System.IO.Stream)
+        CreateInstance(System.IO.Stream,System.Int32)
+        EncodeZigZag32(System.Int32)
+        EncodeZigZag64(System.Int64)
+        Flush()
+        get_Position()
+        Google.ProtocolBuffers.ICodedOutputStream.WriteMessageEnd()
+        Google.ProtocolBuffers.ICodedOutputStream.WriteMessageStart()
+        WriteArray(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Collections.IEnumerable)
+        WriteBool(System.Int32,System.String,System.Boolean)
+        WriteBoolArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Boolean>)
+        WriteBoolNoTag(System.Boolean)
+        WriteBytes(System.Int32,System.String,Google.ProtocolBuffers.ByteString)
+        WriteBytesArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<Google.ProtocolBuffers.ByteString>)
+        WriteBytesNoTag(Google.ProtocolBuffers.ByteString)
+        WriteDouble(System.Int32,System.String,System.Double)
+        WriteDoubleArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Double>)
+        WriteDoubleNoTag(System.Double)
+        WriteEnumArray<T>(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<T>)
+        WriteEnumNoTag(System.Int32)
+        WriteField(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Object)
+        WriteFieldNoTag(Google.ProtocolBuffers.Descriptors.FieldType,System.Object)
+        WriteFixed32(System.Int32,System.String,System.UInt32)
+        WriteFixed32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WriteFixed32NoTag(System.UInt32)
+        WriteFixed64(System.Int32,System.String,System.UInt64)
+        WriteFixed64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteFixed64NoTag(System.UInt64)
+        WriteFloatArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Single>)
+        WriteGroup(System.Int32,System.String,Google.ProtocolBuffers.IMessageLite)
+        WriteGroupArray<T>(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<T>)
+        WriteGroupNoTag(Google.ProtocolBuffers.IMessageLite)
+        WriteInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteInt64NoTag(System.Int64)
+        WriteMessageNoTag(Google.ProtocolBuffers.IMessageLite)
+        WriteMessageSetExtension(System.Int32,System.String,Google.ProtocolBuffers.ByteString)
+        WriteMessageSetExtension(System.Int32,System.String,Google.ProtocolBuffers.IMessageLite)
+        WritePackedArray(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Collections.IEnumerable)
+        WritePackedBoolArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Boolean>)
+        WritePackedBytesArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<Google.ProtocolBuffers.ByteString>)
+        WritePackedDoubleArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Double>)
+        WritePackedEnumArray<T>(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+        WritePackedFixed32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WritePackedFixed64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WritePackedGroupArray<T>(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+        WritePackedInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedMessageArray<T>(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+        WritePackedSFixed32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedSFixed64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedSInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedSInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedStringArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.String>)
+        WritePackedUInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WritePackedUInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteRawByte(System.UInt32)
+        WriteRawBytes(System.Byte[])
+        WriteRawLittleEndian32(System.UInt32)
+        WriteRawLittleEndian64(System.UInt64)
+        WriteSFixed32(System.Int32,System.String,System.Int32)
+        WriteSFixed32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteSFixed32NoTag(System.Int32)
+        WriteSFixed64(System.Int32,System.String,System.Int64)
+        WriteSFixed64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteSFixed64NoTag(System.Int64)
+        WriteSInt32(System.Int32,System.String,System.Int32)
+        WriteSInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteSInt32NoTag(System.Int32)
+        WriteSInt64(System.Int32,System.String,System.Int64)
+        WriteSInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteSInt64NoTag(System.Int64)
+        WriteString(System.Int32,System.String,System.String)
+        WriteStringArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.String>)
+        WriteStringNoTag(System.String)
+        WriteUInt32(System.Int32,System.String,System.UInt32)
+        WriteUInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WriteUInt32NoTag(System.UInt32)
+        WriteUInt64(System.Int32,System.String,System.UInt64)
+        WriteUInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteUInt64NoTag(System.UInt64)
+        WriteUnknownBytes(System.Int32,Google.ProtocolBuffers.ByteString)
+        WriteUnknownField(System.Int32,Google.ProtocolBuffers.WireFormat/WireType,System.UInt64)
+        WriteUnknownGroup(System.Int32,Google.ProtocolBuffers.IMessageLite)
+    Google.ProtocolBuffers.Collections.Dictionaries
+    Google.ProtocolBuffers.Collections.Enumerables
+    Google.ProtocolBuffers.Collections.ICastArray
+        CastArray<TItemType>()
+    Google.ProtocolBuffers.Collections.IPopsicleList`1
+        Add(System.Collections.Generic.IEnumerable`1<T>)
+    Google.ProtocolBuffers.Collections.Lists
+        Equals<T>(System.Collections.Generic.IList`1<T>,System.Collections.Generic.IList`1<T>)
+        GetHashCode<T>(System.Collections.Generic.IList`1<T>)
+    Google.ProtocolBuffers.Collections.Lists`1
+        get_Empty()
+    Google.ProtocolBuffers.Collections.PopsicleList`1
+        Google.ProtocolBuffers.Collections.ICastArray.CastArray<TItemType>()
+    Google.ProtocolBuffers.Collections.ReadOnlyDictionary`2
+    Google.ProtocolBuffers.DescriptorProtos.CSharpFieldOptions
+    Google.ProtocolBuffers.DescriptorProtos.CSharpFileOptions
+    Google.ProtocolBuffers.DescriptorProtos.CSharpMethodOptions
+    Google.ProtocolBuffers.DescriptorProtos.CSharpOptions
+    Google.ProtocolBuffers.DescriptorProtos.CSharpServiceOptions
+    Google.ProtocolBuffers.DescriptorProtos.CSharpServiceType
+    Google.ProtocolBuffers.DescriptorProtos.DescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.DescriptorProtoFile
+    Google.ProtocolBuffers.DescriptorProtos.EnumDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.EnumOptions
+    Google.ProtocolBuffers.DescriptorProtos.EnumValueDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.EnumValueOptions
+    Google.ProtocolBuffers.DescriptorProtos.FieldDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.FieldOptions
+    Google.ProtocolBuffers.DescriptorProtos.FileDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.FileDescriptorSet
+    Google.ProtocolBuffers.DescriptorProtos.FileOptions
+    Google.ProtocolBuffers.DescriptorProtos.IDescriptorProto`1
+    Google.ProtocolBuffers.DescriptorProtos.MessageOptions
+    Google.ProtocolBuffers.DescriptorProtos.MethodDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.MethodOptions
+    Google.ProtocolBuffers.DescriptorProtos.ServiceDescriptorProto
+    Google.ProtocolBuffers.DescriptorProtos.ServiceOptions
+    Google.ProtocolBuffers.DescriptorProtos.SourceCodeInfo
+    Google.ProtocolBuffers.DescriptorProtos.UninterpretedOption
+    Google.ProtocolBuffers.Descriptors.DescriptorBase`2
+    Google.ProtocolBuffers.Descriptors.DescriptorPool
+    Google.ProtocolBuffers.Descriptors.DescriptorUtil
+    Google.ProtocolBuffers.Descriptors.DescriptorValidationException
+    Google.ProtocolBuffers.Descriptors.EnumDescriptor
+    Google.ProtocolBuffers.Descriptors.EnumValueDescriptor
+    Google.ProtocolBuffers.Descriptors.FieldDescriptor
+    Google.ProtocolBuffers.Descriptors.FieldMappingAttribute
+    Google.ProtocolBuffers.Descriptors.FieldType
+    Google.ProtocolBuffers.Descriptors.FileDescriptor
+    Google.ProtocolBuffers.Descriptors.IDescriptor
+    Google.ProtocolBuffers.Descriptors.IDescriptor`1
+    Google.ProtocolBuffers.Descriptors.IndexedDescriptorBase`2
+    Google.ProtocolBuffers.Descriptors.MappedType
+    Google.ProtocolBuffers.Descriptors.MessageDescriptor
+    Google.ProtocolBuffers.Descriptors.MethodDescriptor
+    Google.ProtocolBuffers.Descriptors.PackageDescriptor
+    Google.ProtocolBuffers.Descriptors.ServiceDescriptor
+    Google.ProtocolBuffers.DynamicMessage
+    Google.ProtocolBuffers.EnumLiteMap`1
+    Google.ProtocolBuffers.EnumParser`1
+        _byName
+        TryConvert(System.Object,T&)
+        TryConvert(System.String,T&)
+    Google.ProtocolBuffers.ExtendableBuilder`2
+    Google.ProtocolBuffers.ExtendableBuilderLite`2
+    Google.ProtocolBuffers.ExtendableMessage`2
+    Google.ProtocolBuffers.ExtendableMessageLite`2
+    Google.ProtocolBuffers.ExtensionDescriptorLite
+    Google.ProtocolBuffers.ExtensionInfo
+    Google.ProtocolBuffers.ExtensionRegistry
+        Add(Google.ProtocolBuffers.Descriptors.FieldDescriptor)
+        Add(Google.ProtocolBuffers.Descriptors.FieldDescriptor,Google.ProtocolBuffers.IMessage)
+        Add(Google.ProtocolBuffers.ExtensionInfo)
+        Add(Google.ProtocolBuffers.IGeneratedExtensionLite)
+        Add<TExtension>(Google.ProtocolBuffers.GeneratedExtensionBase`1<TExtension>)
+        AsReadOnly()
+        FindByName(Google.ProtocolBuffers.Descriptors.MessageDescriptor,System.String)
+        FindByName(Google.ProtocolBuffers.IMessageLite,System.String)
+        FindExtensionByName(System.Object,System.String)
+        get_Item(Google.ProtocolBuffers.Descriptors.MessageDescriptor,System.Int32)
+        get_Item(Google.ProtocolBuffers.IMessageLite,System.Int32)
+        get_Item(System.String)
+    Google.ProtocolBuffers.ExtensionRegistry/ExtensionIntPair
+        .ctor(System.Object,System.Int32)
+    Google.ProtocolBuffers.FieldAccess.FieldAccessorTable`2
+    Google.ProtocolBuffers.FieldAccess.IFieldAccessor`2
+    Google.ProtocolBuffers.FieldAccess.ReflectionUtil
+    Google.ProtocolBuffers.FieldAccess.RepeatedEnumAccessor`2
+    Google.ProtocolBuffers.FieldAccess.RepeatedMessageAccessor`2
+    Google.ProtocolBuffers.FieldAccess.RepeatedPrimitiveAccessor`2
+    Google.ProtocolBuffers.FieldAccess.SingleEnumAccessor`2
+    Google.ProtocolBuffers.FieldAccess.SingleMessageAccessor`2
+    Google.ProtocolBuffers.FieldAccess.SinglePrimitiveAccessor`2
+    Google.ProtocolBuffers.FieldSet
+    Google.ProtocolBuffers.FrameworkPortability
+        CompiledRegexWhereAvailable
+        DoubleToInt64(System.Double)
+        Int64ToDouble(System.Int64)
+        TryParseInt32(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Int32&)
+        TryParseInt32(System.String,System.Int32&)
+    Google.ProtocolBuffers.Func`1
+    Google.ProtocolBuffers.Func`2
+    Google.ProtocolBuffers.Func`3
+    Google.ProtocolBuffers.GeneratedBuilder`2
+    Google.ProtocolBuffers.GeneratedExtensionBase`1
+    Google.ProtocolBuffers.GeneratedExtensionLite`2
+    Google.ProtocolBuffers.GeneratedMessage`2
+    Google.ProtocolBuffers.GeneratedRepeatExtension`1
+    Google.ProtocolBuffers.GeneratedRepeatExtensionLite`2
+    Google.ProtocolBuffers.GeneratedSingleExtension`1
+    Google.ProtocolBuffers.IBuilder
+    Google.ProtocolBuffers.IBuilder`2
+    Google.ProtocolBuffers.IBuilderLite
+        get_IsInitialized()
+        get_WeakDefaultInstanceForType()
+        WeakBuild()
+        WeakClear()
+        WeakClone()
+        WeakMergeFrom(Google.ProtocolBuffers.ByteString)
+        WeakMergeFrom(Google.ProtocolBuffers.ByteString,Google.ProtocolBuffers.ExtensionRegistry)
+        WeakMergeFrom(Google.ProtocolBuffers.ICodedInputStream)
+        WeakMergeFrom(Google.ProtocolBuffers.IMessageLite)
+    Google.ProtocolBuffers.IBuilderLite`2
+        Build()
+        BuildPartial()
+        Clear()
+        Clone()
+        get_DefaultInstanceForType()
+        MergeDelimitedFrom(System.IO.Stream)
+        MergeDelimitedFrom(System.IO.Stream,Google.ProtocolBuffers.ExtensionRegistry)
+        MergeFrom(Google.ProtocolBuffers.ByteString)
+        MergeFrom(Google.ProtocolBuffers.ByteString,Google.ProtocolBuffers.ExtensionRegistry)
+        MergeFrom(Google.ProtocolBuffers.ICodedInputStream)
+        MergeFrom(Google.ProtocolBuffers.ICodedInputStream,Google.ProtocolBuffers.ExtensionRegistry)
+        MergeFrom(Google.ProtocolBuffers.IMessageLite)
+        MergeFrom(System.Byte[])
+        MergeFrom(System.Byte[],Google.ProtocolBuffers.ExtensionRegistry)
+        MergeFrom(System.IO.Stream)
+        MergeFrom(System.IO.Stream,Google.ProtocolBuffers.ExtensionRegistry)
+    Google.ProtocolBuffers.ICodedInputStream
+        get_IsAtEnd()
+        ReadBool(System.Boolean&)
+        ReadBoolArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Boolean>)
+        ReadBytes(Google.ProtocolBuffers.ByteString&)
+        ReadBytesArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<Google.ProtocolBuffers.ByteString>)
+        ReadDouble(System.Double&)
+        ReadDoubleArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Double>)
+        ReadEnum(Google.ProtocolBuffers.IEnumLite&,System.Object&,Google.ProtocolBuffers.IEnumLiteMap)
+        ReadEnumArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<Google.ProtocolBuffers.IEnumLite>,System.Collections.Generic.ICollection`1<System.Object>&,Google.ProtocolBuffers.IEnumLiteMap)
+        ReadEnumArray<T>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<T>,System.Collections.Generic.ICollection`1<System.Object>&)
+        ReadFixed32(System.UInt32&)
+        ReadFixed32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt32>)
+        ReadFixed64(System.UInt64&)
+        ReadFixed64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt64>)
+        ReadGroup(System.Int32,Google.ProtocolBuffers.IBuilderLite,Google.ProtocolBuffers.ExtensionRegistry)
+        ReadGroupArray<T>(System.UInt32,System.String,System.Collections.Generic.ICollection`1<T>,T,Google.ProtocolBuffers.ExtensionRegistry)
+        ReadInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadMessageEnd()
+        ReadMessageStart()
+        ReadPrimitiveArray(Google.ProtocolBuffers.Descriptors.FieldType,System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Object>)
+        ReadPrimitiveField(Google.ProtocolBuffers.Descriptors.FieldType,System.Object&)
+        ReadSFixed32(System.Int32&)
+        ReadSFixed32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadSFixed64(System.Int64&)
+        ReadSFixed64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadSInt32(System.Int32&)
+        ReadSInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int32>)
+        ReadSInt64(System.Int64&)
+        ReadSInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.Int64>)
+        ReadString(System.String&)
+        ReadStringArray(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.String>)
+        ReadUInt32(System.UInt32&)
+        ReadUInt32Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt32>)
+        ReadUInt64(System.UInt64&)
+        ReadUInt64Array(System.UInt32,System.String,System.Collections.Generic.ICollection`1<System.UInt64>)
+        ReadUnknownGroup(System.Int32,Google.ProtocolBuffers.IBuilderLite)
+    Google.ProtocolBuffers.ICodedOutputStream
+        Flush()
+        WriteArray(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Collections.IEnumerable)
+        WriteBool(System.Int32,System.String,System.Boolean)
+        WriteBoolArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Boolean>)
+        WriteBytes(System.Int32,System.String,Google.ProtocolBuffers.ByteString)
+        WriteBytesArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<Google.ProtocolBuffers.ByteString>)
+        WriteDouble(System.Int32,System.String,System.Double)
+        WriteDoubleArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Double>)
+        WriteEnumArray<T>(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<T>)
+        WriteField(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Object)
+        WriteFixed32(System.Int32,System.String,System.UInt32)
+        WriteFixed32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WriteFixed64(System.Int32,System.String,System.UInt64)
+        WriteFixed64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteFloatArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Single>)
+        WriteGroup(System.Int32,System.String,Google.ProtocolBuffers.IMessageLite)
+        WriteGroupArray<T>(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<T>)
+        WriteInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteMessageEnd()
+        WriteMessageSetExtension(System.Int32,System.String,Google.ProtocolBuffers.ByteString)
+        WriteMessageSetExtension(System.Int32,System.String,Google.ProtocolBuffers.IMessageLite)
+        WriteMessageStart()
+        WritePackedArray(Google.ProtocolBuffers.Descriptors.FieldType,System.Int32,System.String,System.Collections.IEnumerable)
+        WritePackedBoolArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Boolean>)
+        WritePackedDoubleArray(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Double>)
+        WritePackedEnumArray<T>(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<T>)
+        WritePackedFixed32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WritePackedFixed64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WritePackedInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedSFixed32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedSFixed64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedSInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WritePackedSInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WritePackedUInt32Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WritePackedUInt64Array(System.Int32,System.String,System.Int32,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteSFixed32(System.Int32,System.String,System.Int32)
+        WriteSFixed32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteSFixed64(System.Int32,System.String,System.Int64)
+        WriteSFixed64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteSInt32(System.Int32,System.String,System.Int32)
+        WriteSInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int32>)
+        WriteSInt64(System.Int32,System.String,System.Int64)
+        WriteSInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.Int64>)
+        WriteString(System.Int32,System.String,System.String)
+        WriteStringArray(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.String>)
+        WriteUInt32(System.Int32,System.String,System.UInt32)
+        WriteUInt32Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt32>)
+        WriteUInt64(System.Int32,System.String,System.UInt64)
+        WriteUInt64Array(System.Int32,System.String,System.Collections.Generic.IEnumerable`1<System.UInt64>)
+        WriteUnknownBytes(System.Int32,Google.ProtocolBuffers.ByteString)
+        WriteUnknownField(System.Int32,Google.ProtocolBuffers.WireFormat/WireType,System.UInt64)
+        WriteUnknownGroup(System.Int32,Google.ProtocolBuffers.IMessageLite)
+    Google.ProtocolBuffers.IEnumLite
+        get_Number()
+    Google.ProtocolBuffers.IEnumLiteMap
+    Google.ProtocolBuffers.IEnumLiteMap`1
+    Google.ProtocolBuffers.IFieldDescriptorLite
+    Google.ProtocolBuffers.IGeneratedExtensionLite
+        get_ContainingType()
+        get_Descriptor()
+        get_MessageDefaultInstance()
+        get_Number()
+    Google.ProtocolBuffers.IMessage
+    Google.ProtocolBuffers.IMessage`1
+    Google.ProtocolBuffers.IMessage`2
+    Google.ProtocolBuffers.IMessageLite
+        Equals(System.Object)
+        get_IsInitialized()
+        get_WeakDefaultInstanceForType()
+        GetHashCode()
+        ToByteArray()
+        ToByteString()
+        ToString()
+        WeakToBuilder()
+        WriteDelimitedTo(System.IO.Stream)
+        WriteTo(System.IO.Stream)
+    Google.ProtocolBuffers.IMessageLite`1
+        get_DefaultInstanceForType()
+    Google.ProtocolBuffers.IMessageLite`2
+        CreateBuilderForType()
+        ToBuilder()
+    Google.ProtocolBuffers.InvalidProtocolBufferException
+        InvalidMessageStreamTag()
+    Google.ProtocolBuffers.IRpcChannel
+    Google.ProtocolBuffers.IRpcController
+    Google.ProtocolBuffers.IRpcDispatch
+    Google.ProtocolBuffers.IRpcServerStub
+    Google.ProtocolBuffers.IService
+    Google.ProtocolBuffers.MessageStreamIterator`1
+    Google.ProtocolBuffers.MessageStreamWriter`1
+    Google.ProtocolBuffers.MessageUtil
+    Google.ProtocolBuffers.NameHelpers
+    Google.ProtocolBuffers.RpcUtil
+    Google.ProtocolBuffers.StreamProvider
+    Google.ProtocolBuffers.TextFormat
+    Google.ProtocolBuffers.TextGenerator
+    Google.ProtocolBuffers.TextTokenizer
+    Google.ProtocolBuffers.ThrowHelper
+        CreateMissingMethod(System.Type,System.String)
+    Google.ProtocolBuffers.UninitializedMessageException
+        .ctor(Google.ProtocolBuffers.IMessage)
+        .ctor(System.Collections.Generic.IList`1<System.String>)
+        BuildDescription(System.Collections.Generic.IEnumerable`1<System.String>)
+        FindMissingFields(Google.ProtocolBuffers.IMessage)
+        FindMissingFields(Google.ProtocolBuffers.IMessage,System.String,System.Collections.Generic.List`1<System.String>)
+        get_MissingFields()
+        SubMessagePrefix(System.String,Google.ProtocolBuffers.Descriptors.FieldDescriptor,System.Int32)
+    Google.ProtocolBuffers.UnknownField
+    Google.ProtocolBuffers.UnknownFieldSet
+    Google.ProtocolBuffers.WireFormat
+        BoolSize
+        DoubleSize
+        Fixed32Size
+        Fixed64Size
+        FloatSize
+        SFixed32Size
+        SFixed64Size
+        TagTypeBits
+        TagTypeMask
+        GetWireType(Google.ProtocolBuffers.Descriptors.FieldDescriptor)
+        GetWireType(Google.ProtocolBuffers.Descriptors.FieldType)
+        MakeTag(Google.ProtocolBuffers.Descriptors.FieldDescriptor)
+    Google.ProtocolBuffers.WireFormat/MessageSetField
+    Google.ProtocolBuffers.WireFormat/MessageSetTag
 ---------------------------------------------------
 Assembly: Mono.Security
 ---------------------------------------------------
@@ -547,16 +1080,16 @@ Summary:
 Assembly: mscorlib
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 799
+  Total Type Removals = 797
     Nested = 54
     Interfaces = 83
     Abstract Classes = 63
     Generic Types = 5
     Generic Interfaces = 0
     Generic Abstract Classes = 1
-    Attributes = 85
-  Total Field Removals = 463
-  Total Method Removals = 4913
+    Attributes = 84
+  Total Field Removals = 462
+  Total Method Removals = 4890
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -1955,7 +2488,6 @@ Summary:
         set_Target(System.Type)
         set_TargetTypeName(System.String)
         set_Type(System.String)
-    System.Diagnostics.DebuggerNonUserCodeAttribute
     System.Diagnostics.DebuggerStepperBoundaryAttribute
     System.Diagnostics.DebuggerTypeProxyAttribute
         target_type
@@ -2419,7 +2951,6 @@ Summary:
         Parse(System.String,System.Globalization.NumberStyles)
     System.IntPtr
         op_Explicit(System.IntPtr)
-        ToInt32()
     System.InvalidCastException
         .ctor(System.String,System.Exception)
         .ctor(System.String,System.Int32)
@@ -2703,6 +3234,9 @@ Summary:
     System.IO.StringReader
         Close()
     System.IO.StringWriter
+        .ctor(System.IFormatProvider)
+        get_Encoding()
+        GetStringBuilder()
     System.IO.SynchronizedReader
         Close()
         ReadBlock(System.Char[],System.Int32,System.Int32)
@@ -2718,8 +3252,6 @@ Summary:
         Write(System.Int64)
         Write(System.Object)
         Write(System.Single)
-        Write(System.String,System.Object)
-        Write(System.String,System.Object,System.Object)
         Write(System.String,System.Object,System.Object,System.Object)
         Write(System.String,System.Object[])
         Write(System.UInt32)
@@ -2734,8 +3266,6 @@ Summary:
         WriteLine(System.Int64)
         WriteLine(System.Object)
         WriteLine(System.Single)
-        WriteLine(System.String,System.Object)
-        WriteLine(System.String,System.Object,System.Object)
         WriteLine(System.String,System.Object,System.Object,System.Object)
         WriteLine(System.String,System.Object[])
         WriteLine(System.UInt32)
@@ -2744,7 +3274,6 @@ Summary:
         Close()
         ReadBlock(System.Char[],System.Int32,System.Int32)
     System.IO.TextWriter
-        internalFormatProvider
         .ctor(System.IFormatProvider)
         get_Encoding()
         get_FormatProvider()
@@ -2758,8 +3287,6 @@ Summary:
         Write(System.Int64)
         Write(System.Object)
         Write(System.Single)
-        Write(System.String,System.Object)
-        Write(System.String,System.Object,System.Object)
         Write(System.String,System.Object,System.Object,System.Object)
         Write(System.String,System.Object[])
         Write(System.UInt32)
@@ -2774,8 +3301,6 @@ Summary:
         WriteLine(System.Int64)
         WriteLine(System.Object)
         WriteLine(System.Single)
-        WriteLine(System.String,System.Object)
-        WriteLine(System.String,System.Object,System.Object)
         WriteLine(System.String,System.Object,System.Object,System.Object)
         WriteLine(System.String,System.Object[])
         WriteLine(System.UInt32)
@@ -2823,9 +3348,6 @@ Summary:
         Abs(System.Double)
         Abs(System.Int16)
         Abs(System.SByte)
-        Asin(System.Double)
-        Atan(System.Double)
-        Atan2(System.Double,System.Double)
         BigMul(System.Int32,System.Int32)
         Ceiling(System.Decimal)
         Cosh(System.Double)
@@ -2866,7 +3388,6 @@ Summary:
         Sign(System.SByte)
         Sign(System.Single)
         Sinh(System.Double)
-        Tan(System.Double)
         Tanh(System.Double)
         Truncate(System.Decimal)
         Truncate(System.Double)
@@ -4759,15 +5280,9 @@ Summary:
     System.Runtime.InteropServices.FUNCFLAGS
     System.Runtime.InteropServices.FUNCKIND
     System.Runtime.InteropServices.GCHandle
-        .ctor(System.IntPtr)
-        CheckCurrentDomain(System.Int32)
-        FromIntPtr(System.IntPtr)
         op_Equality(System.Runtime.InteropServices.GCHandle,System.Runtime.InteropServices.GCHandle)
-        op_Explicit(System.IntPtr)
-        op_Explicit(System.Runtime.InteropServices.GCHandle)
         op_Inequality(System.Runtime.InteropServices.GCHandle,System.Runtime.InteropServices.GCHandle)
         set_Target(System.Object)
-        ToIntPtr(System.Runtime.InteropServices.GCHandle)
     System.Runtime.InteropServices.GuidAttribute
         get_Value()
     System.Runtime.InteropServices.HandleRef
@@ -4885,7 +5400,6 @@ Summary:
         PtrToStringBSTR(System.IntPtr)
         PtrToStringUni(System.IntPtr,System.Int32)
         PtrToStructure(System.IntPtr,System.Object)
-        PtrToStructure(System.IntPtr,System.Type)
         QueryInterface(System.IntPtr,System.Guid&,System.IntPtr&)
         QueryInterfaceInternal(System.IntPtr,System.Guid&,System.IntPtr&)
         ReadByte(System.IntPtr)
@@ -4915,16 +5429,12 @@ Summary:
         SecureStringToGlobalAllocAnsi(System.Security.SecureString)
         SecureStringToGlobalAllocUnicode(System.Security.SecureString)
         SetComObjectData(System.Object,System.Object,System.Object)
-        SizeOf(System.Object)
-        SizeOf(System.Type)
         StringToBSTR(System.String)
         StringToCoTaskMemAnsi(System.String)
         StringToCoTaskMemAuto(System.String)
         StringToCoTaskMemUni(System.String)
-        StringToHGlobalAnsi(System.String)
         StringToHGlobalAuto(System.String)
         StringToHGlobalUni(System.String)
-        StructureToPtr(System.Object,System.IntPtr,System.Boolean)
         ThrowExceptionForHR(System.Int32)
         ThrowExceptionForHR(System.Int32,System.IntPtr)
         UnsafeAddrOfPinnedArrayElement(System.Array,System.Int32)
@@ -6296,7 +6806,6 @@ Summary:
         set_ControlPrincipal(System.Boolean)
         set_ControlThread(System.Boolean)
         set_Execution(System.Boolean)
-        set_Flags(System.Security.Permissions.SecurityPermissionFlag)
         set_Infrastructure(System.Boolean)
         set_RemotingConfiguration(System.Boolean)
         set_SerializationFormatter(System.Boolean)
@@ -6744,7 +7253,6 @@ Summary:
         get_CurrentCulture()
         get_CurrentCultureIgnoreCase()
         get_InvariantCulture()
-        get_Ordinal()
         get_OrdinalIgnoreCase()
     System.SystemException
         Result
@@ -7306,16 +7814,16 @@ Summary:
 Assembly: System
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 585
+  Total Type Removals = 582
     Nested = 24
     Interfaces = 32
     Abstract Classes = 43
-    Generic Types = 4
+    Generic Types = 3
     Generic Interfaces = 0
     Generic Abstract Classes = 0
     Attributes = 35
-  Total Field Removals = 114
-  Total Method Removals = 998
+  Total Field Removals = 115
+  Total Method Removals = 1009
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -7342,13 +7850,24 @@ Summary:
         FINISHED
         NOT_STARTED
     System.Collections.Generic.RBTree
+        get_Item(System.Int32)
+    System.Collections.Generic.RBTree/Node
+        black_mask
+        black_shift
     System.Collections.Generic.SortedDictionary`2
+        .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>)
+        .ctor(System.Collections.Generic.IDictionary`2<TKey,TValue>,System.Collections.Generic.IComparer`1<TKey>)
+        get_Comparer()
+        get_Keys()
+        GetEnumerator()
+        System.Collections.IDictionary.Contains(System.Object)
+        System.Collections.IDictionary.get_IsFixedSize()
+        System.Collections.IDictionary.get_IsReadOnly()
+        System.Collections.IDictionary.get_Keys()
+        System.Collections.IDictionary.get_Values()
     System.Collections.Generic.SortedList`2
     System.Collections.Generic.Stack`1
-        INITIAL_SIZE
         .ctor(System.Collections.Generic.IEnumerable`1<T>)
-        .ctor(System.Int32)
-        Clear()
         Contains(T)
         CopyTo(T[],System.Int32)
         ToArray()
@@ -7534,6 +8053,8 @@ Summary:
     System.ComponentModel.Int32Converter
     System.ComponentModel.Int64Converter
     System.ComponentModel.InvalidEnumArgumentException
+        .ctor(System.String,System.Exception)
+        .ctor(System.String,System.Int32,System.Type)
     System.ComponentModel.IRevertibleChangeTracking
     System.ComponentModel.ISite
     System.ComponentModel.ISupportInitialize
@@ -9121,7 +9642,7 @@ Summary:
     Generic Abstract Classes = 2
     Attributes = 5
   Total Field Removals = 32
-  Total Method Removals = 293
+  Total Method Removals = 290
   References Removed = 0
 ---------------------------------------------------
     <PrivateImplementationDetails>
@@ -9320,9 +9841,6 @@ Summary:
         Except<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEnumerable`1<TSource>,System.Collections.Generic.IEqualityComparer`1<TSource>)
         First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
         First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-        First<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>,System.Linq.Enumerable/Fallback)
-        FirstOrDefault<TSource>(System.Collections.Generic.IEnumerable`1<TSource>)
-        FirstOrDefault<TSource>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
         GroupBy<TSource,TKey,TElement,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Func`3<TKey,System.Collections.Generic.IEnumerable`1<TElement>,TResult>)
         GroupBy<TSource,TKey,TElement,TResult>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>,System.Func`3<TKey,System.Collections.Generic.IEnumerable`1<TElement>,TResult>,System.Collections.Generic.IEqualityComparer`1<TKey>)
         GroupBy<TSource,TKey,TElement>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>,System.Func`2<TSource,TElement>)
@@ -9593,7 +10111,7 @@ Summary:
     Attributes = 0
   Total Field Removals = 0
   Total Method Removals = 0
-  References Removed = 24
+  References Removed = 22
     UnityEngine.AccessibilityModule
     UnityEngine.AIModule
     UnityEngine.ARModule
@@ -9602,7 +10120,6 @@ Summary:
     UnityEngine.DirectorModule
     UnityEngine.GridModule
     UnityEngine.ImageConversionModule
-    UnityEngine.InputModule
     UnityEngine.JSONSerializeModule
     UnityEngine.ParticlesLegacyModule
     UnityEngine.PerformanceReportingModule
@@ -9616,7 +10133,6 @@ Summary:
     UnityEngine.UnityWebRequestTextureModule
     UnityEngine.VehiclesModule
     UnityEngine.VideoModule
-    UnityEngine.VRModule
     UnityEngine.WindModule
 ---------------------------------------------------
 ---------------------------------------------------
@@ -10267,7 +10783,7 @@ Summary:
 Assembly: UnityEngine.AudioModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 27
+  Total Type Removals = 20
     Nested = 0
     Interfaces = 0
     Abstract Classes = 1
@@ -10276,7 +10792,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 239
+  Total Method Removals = 207
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.Audio.AudioClipPlayable
@@ -10320,7 +10836,19 @@ Summary:
         ValidateStartDelayInternal(System.Double)
         ValidateType(UnityEngine.Playables.PlayableHandle&)
     UnityEngine.Audio.AudioMixer
+        .ctor()
+        ClearFloat(System.String)
+        FindSnapshot(System.String)
+        get_outputAudioMixerGroup()
+        get_updateMode()
+        GetFloat(System.String,System.Single&)
+        set_outputAudioMixerGroup(UnityEngine.Audio.AudioMixerGroup)
+        set_updateMode(UnityEngine.Audio.AudioMixerUpdateMode)
+        SetFloat(System.String,System.Single)
+        TransitionToSnapshot(UnityEngine.Audio.AudioMixerSnapshot,System.Single)
+        TransitionToSnapshots(UnityEngine.Audio.AudioMixerSnapshot[],System.Single[],System.Single)
     UnityEngine.Audio.AudioMixerGroup
+        get_audioMixer()
     UnityEngine.Audio.AudioMixerPlayable
         .ctor(UnityEngine.Playables.PlayableHandle)
         Create(UnityEngine.Playables.PlayableGraph,System.Int32,System.Boolean)
@@ -10382,7 +10910,6 @@ Summary:
         UnloadAudioData()
     UnityEngine.AudioClipLoadType
     UnityEngine.AudioCompressionFormat
-    UnityEngine.AudioConfiguration
     UnityEngine.AudioDataLoadState
     UnityEngine.AudioDistortionFilter
     UnityEngine.AudioEchoFilter
@@ -10431,19 +10958,15 @@ Summary:
     UnityEngine.AudioReverbFilter
     UnityEngine.AudioReverbPreset
     UnityEngine.AudioReverbZone
-    UnityEngine.AudioRolloffMode
     UnityEngine.AudioSettings
         .ctor()
         add_OnAudioConfigurationChanged(UnityEngine.AudioSettings/AudioConfigurationChangeHandler)
         get_driverCapabilities()
-        get_dspTime()
         get_outputSampleRate()
         get_profilerCaptureFlags()
         get_speakerMode()
         get_unityAudioDisabled()
-        GetConfiguration()
         GetDSPBufferSize(System.Int32&,System.Int32&)
-        INTERNAL_CALL_GetConfiguration(UnityEngine.AudioConfiguration&)
         INTERNAL_CALL_Reset(UnityEngine.AudioConfiguration&)
         remove_OnAudioConfigurationChanged(UnityEngine.AudioSettings/AudioConfigurationChangeHandler)
         Reset(UnityEngine.AudioConfiguration)
@@ -10476,83 +10999,39 @@ Summary:
         get_spatialBlend()
         get_spatializePostEffects()
         get_spread()
-        get_time()
-        get_timeSamples()
         get_velocityUpdateMode()
         get_volume()
         GetAmbisonicDecoderFloat(System.Int32,System.Single&)
         GetCustomCurve(UnityEngine.AudioSourceCurveType)
         GetNumExtensionPropertiesForThisExtension(UnityEngine.PropertyName)
         GetOutputData(System.Int32,System.Int32)
-        GetOutputData(System.Single[],System.Int32)
-        GetOutputDataHelper(System.Single[],System.Int32)
         GetSpatializerFloat(System.Int32,System.Single&)
         GetSpectrumData(System.Int32,System.Int32,UnityEngine.FFTWindow)
-        GetSpectrumData(System.Single[],System.Int32,UnityEngine.FFTWindow)
-        GetSpectrumDataHelper(System.Single[],System.Int32,UnityEngine.FFTWindow)
         INTERNAL_CALL_GetNumExtensionPropertiesForThisExtension(UnityEngine.AudioSource,UnityEngine.PropertyName&)
-        INTERNAL_CALL_Pause(UnityEngine.AudioSource)
         INTERNAL_CALL_ReadExtensionProperty(UnityEngine.AudioSource,UnityEngine.PropertyName&,UnityEngine.PropertyName&,System.Single&)
-        INTERNAL_CALL_UnPause(UnityEngine.AudioSource)
-        Pause()
-        Play()
-        Play(System.UInt64)
         PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)
         PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)
-        PlayDelayed(System.Single)
         PlayOneShot(UnityEngine.AudioClip)
-        PlayOneShot(UnityEngine.AudioClip,System.Single)
         PlayOneShotHelper(UnityEngine.AudioClip)
-        PlayOneShotHelper(UnityEngine.AudioClip,System.Single)
-        PlayScheduled(System.Double)
         ReadExtensionProperty(UnityEngine.PropertyName,UnityEngine.PropertyName,System.Single&)
         set_bypassEffects(System.Boolean)
         set_bypassListenerEffects(System.Boolean)
-        set_bypassReverbZones(System.Boolean)
-        set_clip(UnityEngine.AudioClip)
-        set_dopplerLevel(System.Single)
         set_ignoreListenerPause(System.Boolean)
         set_ignoreListenerVolume(System.Boolean)
-        set_loop(System.Boolean)
-        set_maxDistance(System.Single)
         set_maxVolume(System.Single)
-        set_minDistance(System.Single)
         set_minVolume(System.Single)
-        set_mute(System.Boolean)
-        set_outputAudioMixerGroup(UnityEngine.Audio.AudioMixerGroup)
         set_panStereo(System.Single)
-        set_pitch(System.Single)
-        set_playOnAwake(System.Boolean)
-        set_priority(System.Int32)
         set_reverbZoneMix(System.Single)
         set_rolloffFactor(System.Single)
-        set_rolloffMode(UnityEngine.AudioRolloffMode)
-        set_spatialBlend(System.Single)
-        set_spatialize(System.Boolean)
-        set_spatializeInternal(System.Boolean)
-        set_spatializePostEffects(System.Boolean)
-        set_spread(System.Single)
-        set_time(System.Single)
-        set_timeSamples(System.Int32)
         set_velocityUpdateMode(UnityEngine.AudioVelocityUpdateMode)
-        set_volume(System.Single)
         SetAmbisonicDecoderFloat(System.Int32,System.Single)
-        SetCustomCurve(UnityEngine.AudioSourceCurveType,UnityEngine.AnimationCurve)
-        SetScheduledEndTime(System.Double)
-        SetScheduledStartTime(System.Double)
-        SetSpatializerFloat(System.Int32,System.Single)
-        Stop()
-        UnPause()
-    UnityEngine.AudioSourceCurveType
     UnityEngine.AudioSourceExtension
         .ctor()
         OnDestroy()
         ReadExtensionProperty(UnityEngine.PropertyName)
     UnityEngine.AudioSpatializerExtensionDefinition
         .ctor(System.String,UnityEngine.AudioExtensionDefinition,UnityEngine.AudioExtensionDefinition)
-    UnityEngine.AudioSpeakerMode
     UnityEngine.AudioVelocityUpdateMode
-    UnityEngine.FFTWindow
     UnityEngine.Microphone
     UnityEngine.Playables.AudioPlayableGraphExtensions
     UnityEngine.WebCamDevice
@@ -10562,16 +11041,16 @@ Summary:
 Assembly: UnityEngine.CoreModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 409
+  Total Type Removals = 391
     Nested = 9
     Interfaces = 10
     Abstract Classes = 17
     Generic Types = 5
     Generic Interfaces = 0
     Generic Abstract Classes = 0
-    Attributes = 48
-  Total Field Removals = 34
-  Total Method Removals = 2693
+    Attributes = 46
+  Total Field Removals = 35
+  Total Method Removals = 2874
   References Removed = 0
 ---------------------------------------------------
     JetBrains.Annotations.AssertionMethodAttribute
@@ -10595,20 +11074,234 @@ Summary:
     JetBrains.Annotations.StringFormatMethodAttribute
     JetBrains.Annotations.UsedImplicitlyAttribute
     UnityEngine._AndroidJNIHelper
+        .ctor()
+        Box(System.Object)
+        CreateJavaProxy(System.Int32,UnityEngine.AndroidJavaProxy)
+        GetConstructorID(System.IntPtr,System.Object[])
+        GetConstructorID(System.IntPtr,System.String)
+        GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
+        GetFieldID<ReturnType>(System.IntPtr,System.String,System.Boolean)
+        GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
+        GetSignature(System.Object[])
+        InvokeJavaProxyMethod(UnityEngine.AndroidJavaProxy,System.IntPtr,System.IntPtr)
+        Unbox(UnityEngine.AndroidJavaObject)
+        UnboxArray(UnityEngine.AndroidJavaObject)
     UnityEngine.AccelerationEvent
     UnityEngine.AddComponentMenu
         get_componentMenu()
         get_componentOrder()
-    UnityEngine.AndroidJavaClass
-    UnityEngine.AndroidJavaException
     UnityEngine.AndroidJavaObject
+        .ctor(System.String,System.Object[])
+        _AndroidJavaObject(System.String,System.Object[])
+        _Call(System.String,System.Object[])
+        _CallStatic(System.String,System.Object[])
+        _Get<FieldType>(System.String)
+        _GetStatic<FieldType>(System.String)
+        _Set<FieldType>(System.String,FieldType)
+        _SetStatic<FieldType>(System.String,FieldType)
+        Call(System.String,System.Object[])
+        CallStatic(System.String,System.Object[])
+        DebugPrint(System.String,System.String,System.String,System.Object[])
+        Get<FieldType>(System.String)
+        GetStatic<FieldType>(System.String)
+        Set<FieldType>(System.String,FieldType)
+        SetStatic<FieldType>(System.String,FieldType)
     UnityEngine.AndroidJavaProxy
-    UnityEngine.AndroidJavaRunnable
+        equals(UnityEngine.AndroidJavaObject)
+        hashCode()
+        Invoke(System.String,System.Object[])
+        Invoke(System.String,UnityEngine.AndroidJavaObject[])
+        toString()
     UnityEngine.AndroidJavaRunnableProxy
+        run()
     UnityEngine.AndroidJNI
+        .ctor()
+        AllocObject(System.IntPtr)
+        AttachCurrentThread()
+        CallStaticVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        CallVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        DetachCurrentThread()
+        EnsureLocalCapacity(System.Int32)
+        ExceptionDescribe()
+        FatalError(System.String)
+        FromObjectArray(System.IntPtr)
+        FromReflectedField(System.IntPtr)
+        GetBooleanArrayElement(System.IntPtr,System.Int32)
+        GetBooleanField(System.IntPtr,System.IntPtr)
+        GetByteArrayElement(System.IntPtr,System.Int32)
+        GetByteField(System.IntPtr,System.IntPtr)
+        GetCharArrayElement(System.IntPtr,System.Int32)
+        GetCharField(System.IntPtr,System.IntPtr)
+        GetDoubleArrayElement(System.IntPtr,System.Int32)
+        GetDoubleField(System.IntPtr,System.IntPtr)
+        GetFieldID(System.IntPtr,System.String,System.String)
+        GetFloatArrayElement(System.IntPtr,System.Int32)
+        GetFloatField(System.IntPtr,System.IntPtr)
+        GetIntArrayElement(System.IntPtr,System.Int32)
+        GetIntField(System.IntPtr,System.IntPtr)
+        GetLongArrayElement(System.IntPtr,System.Int32)
+        GetLongField(System.IntPtr,System.IntPtr)
+        GetObjectField(System.IntPtr,System.IntPtr)
+        GetShortArrayElement(System.IntPtr,System.Int32)
+        GetShortField(System.IntPtr,System.IntPtr)
+        GetStaticBooleanField(System.IntPtr,System.IntPtr)
+        GetStaticByteField(System.IntPtr,System.IntPtr)
+        GetStaticCharField(System.IntPtr,System.IntPtr)
+        GetStaticDoubleField(System.IntPtr,System.IntPtr)
+        GetStaticFieldID(System.IntPtr,System.String,System.String)
+        GetStaticFloatField(System.IntPtr,System.IntPtr)
+        GetStaticIntField(System.IntPtr,System.IntPtr)
+        GetStaticLongField(System.IntPtr,System.IntPtr)
+        GetStaticObjectField(System.IntPtr,System.IntPtr)
+        GetStaticShortField(System.IntPtr,System.IntPtr)
+        GetStaticStringField(System.IntPtr,System.IntPtr)
+        GetStringField(System.IntPtr,System.IntPtr)
+        GetStringUTFLength(System.IntPtr)
+        GetSuperclass(System.IntPtr)
+        GetVersion()
+        INTERNAL_CALL_AllocObject(System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_FromReflectedField(System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_GetFieldID(System.IntPtr,System.String,System.String,System.IntPtr&)
+        INTERNAL_CALL_GetObjectField(System.IntPtr,System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_GetStaticFieldID(System.IntPtr,System.String,System.String,System.IntPtr&)
+        INTERNAL_CALL_GetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_GetSuperclass(System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_NewBooleanArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewByteArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewCharArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewDoubleArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewFloatArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewIntArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewLocalRef(System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_NewLongArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_NewObject(System.IntPtr,System.IntPtr,UnityEngine.jvalue[],System.IntPtr&)
+        INTERNAL_CALL_NewShortArray(System.Int32,System.IntPtr&)
+        INTERNAL_CALL_PopLocalFrame(System.IntPtr,System.IntPtr&)
+        INTERNAL_CALL_ToReflectedField(System.IntPtr,System.IntPtr,System.Boolean,System.IntPtr&)
+        INTERNAL_CALL_ToReflectedMethod(System.IntPtr,System.IntPtr,System.Boolean,System.IntPtr&)
+        IsAssignableFrom(System.IntPtr,System.IntPtr)
+        IsInstanceOf(System.IntPtr,System.IntPtr)
+        IsSameObject(System.IntPtr,System.IntPtr)
+        NewBooleanArray(System.Int32)
+        NewByteArray(System.Int32)
+        NewCharArray(System.Int32)
+        NewDoubleArray(System.Int32)
+        NewFloatArray(System.Int32)
+        NewIntArray(System.Int32)
+        NewLocalRef(System.IntPtr)
+        NewLongArray(System.Int32)
+        NewObject(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        NewShortArray(System.Int32)
+        PopLocalFrame(System.IntPtr)
+        PushLocalFrame(System.Int32)
+        SetBooleanArrayElement(System.IntPtr,System.Int32,System.Byte)
+        SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
+        SetByteArrayElement(System.IntPtr,System.Int32,System.SByte)
+        SetByteField(System.IntPtr,System.IntPtr,System.Byte)
+        SetCharArrayElement(System.IntPtr,System.Int32,System.Char)
+        SetCharField(System.IntPtr,System.IntPtr,System.Char)
+        SetDoubleArrayElement(System.IntPtr,System.Int32,System.Double)
+        SetDoubleField(System.IntPtr,System.IntPtr,System.Double)
+        SetFloatArrayElement(System.IntPtr,System.Int32,System.Single)
+        SetFloatField(System.IntPtr,System.IntPtr,System.Single)
+        SetIntArrayElement(System.IntPtr,System.Int32,System.Int32)
+        SetIntField(System.IntPtr,System.IntPtr,System.Int32)
+        SetLongArrayElement(System.IntPtr,System.Int32,System.Int64)
+        SetLongField(System.IntPtr,System.IntPtr,System.Int64)
+        SetObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
+        SetShortArrayElement(System.IntPtr,System.Int32,System.Int16)
+        SetShortField(System.IntPtr,System.IntPtr,System.Int16)
+        SetStaticBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
+        SetStaticByteField(System.IntPtr,System.IntPtr,System.Byte)
+        SetStaticCharField(System.IntPtr,System.IntPtr,System.Char)
+        SetStaticDoubleField(System.IntPtr,System.IntPtr,System.Double)
+        SetStaticFloatField(System.IntPtr,System.IntPtr,System.Single)
+        SetStaticIntField(System.IntPtr,System.IntPtr,System.Int32)
+        SetStaticLongField(System.IntPtr,System.IntPtr,System.Int64)
+        SetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
+        SetStaticShortField(System.IntPtr,System.IntPtr,System.Int16)
+        SetStaticStringField(System.IntPtr,System.IntPtr,System.String)
+        SetStringField(System.IntPtr,System.IntPtr,System.String)
+        Throw(System.IntPtr)
+        ThrowNew(System.IntPtr,System.String)
+        ToObjectArray(System.IntPtr[])
+        ToReflectedField(System.IntPtr,System.IntPtr,System.Boolean)
+        ToReflectedMethod(System.IntPtr,System.IntPtr,System.Boolean)
     UnityEngine.AndroidJNIHelper
+        .ctor()
+        ConvertToJNIArray(System.Array)
+        get_debug()
+        GetConstructorID(System.IntPtr)
+        GetConstructorID(System.IntPtr,System.Object[])
+        GetConstructorID(System.IntPtr,System.String)
+        GetFieldID(System.IntPtr,System.String)
+        GetFieldID(System.IntPtr,System.String,System.String)
+        GetFieldID(System.IntPtr,System.String,System.String,System.Boolean)
+        GetFieldID<FieldType>(System.IntPtr,System.String,System.Boolean)
+        GetMethodID(System.IntPtr,System.String)
+        GetMethodID(System.IntPtr,System.String,System.Object[],System.Boolean)
+        GetMethodID(System.IntPtr,System.String,System.String)
+        GetSignature(System.Object)
+        GetSignature(System.Object[])
+        GetSignature<ReturnType>(System.Object[])
+        set_debug(System.Boolean)
     UnityEngine.AndroidJNISafe
+        .ctor()
+        CallStaticVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        CallVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        FromObjectArray(System.IntPtr)
+        FromReflectedField(System.IntPtr)
+        GetBooleanField(System.IntPtr,System.IntPtr)
+        GetByteField(System.IntPtr,System.IntPtr)
+        GetCharField(System.IntPtr,System.IntPtr)
+        GetDoubleField(System.IntPtr,System.IntPtr)
+        GetFieldID(System.IntPtr,System.String,System.String)
+        GetFloatField(System.IntPtr,System.IntPtr)
+        GetIntField(System.IntPtr,System.IntPtr)
+        GetLongField(System.IntPtr,System.IntPtr)
+        GetObjectArrayElement(System.IntPtr,System.Int32)
+        GetObjectField(System.IntPtr,System.IntPtr)
+        GetShortField(System.IntPtr,System.IntPtr)
+        GetStaticBooleanField(System.IntPtr,System.IntPtr)
+        GetStaticByteField(System.IntPtr,System.IntPtr)
+        GetStaticCharField(System.IntPtr,System.IntPtr)
+        GetStaticDoubleField(System.IntPtr,System.IntPtr)
+        GetStaticFieldID(System.IntPtr,System.String,System.String)
+        GetStaticFloatField(System.IntPtr,System.IntPtr)
+        GetStaticIntField(System.IntPtr,System.IntPtr)
+        GetStaticLongField(System.IntPtr,System.IntPtr)
+        GetStaticObjectField(System.IntPtr,System.IntPtr)
+        GetStaticShortField(System.IntPtr,System.IntPtr)
+        GetStaticStringField(System.IntPtr,System.IntPtr)
+        GetStringField(System.IntPtr,System.IntPtr)
+        NewObject(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+        SetBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
+        SetByteField(System.IntPtr,System.IntPtr,System.Byte)
+        SetCharField(System.IntPtr,System.IntPtr,System.Char)
+        SetDoubleField(System.IntPtr,System.IntPtr,System.Double)
+        SetFloatField(System.IntPtr,System.IntPtr,System.Single)
+        SetIntField(System.IntPtr,System.IntPtr,System.Int32)
+        SetLongField(System.IntPtr,System.IntPtr,System.Int64)
+        SetObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
+        SetShortField(System.IntPtr,System.IntPtr,System.Int16)
+        SetStaticBooleanField(System.IntPtr,System.IntPtr,System.Boolean)
+        SetStaticByteField(System.IntPtr,System.IntPtr,System.Byte)
+        SetStaticCharField(System.IntPtr,System.IntPtr,System.Char)
+        SetStaticDoubleField(System.IntPtr,System.IntPtr,System.Double)
+        SetStaticFloatField(System.IntPtr,System.IntPtr,System.Single)
+        SetStaticIntField(System.IntPtr,System.IntPtr,System.Int32)
+        SetStaticLongField(System.IntPtr,System.IntPtr,System.Int64)
+        SetStaticObjectField(System.IntPtr,System.IntPtr,System.IntPtr)
+        SetStaticShortField(System.IntPtr,System.IntPtr,System.Int16)
+        SetStaticStringField(System.IntPtr,System.IntPtr,System.String)
+        SetStringField(System.IntPtr,System.IntPtr,System.String)
+        ToObjectArray(System.IntPtr[])
     UnityEngine.AndroidReflection
+        RELECTION_HELPER_CLASS_NAME
+        .ctor()
+        GetConstructorMember(System.IntPtr,System.String)
+        GetFieldMember(System.IntPtr,System.String,System.String,System.Boolean)
+        NewProxyInstance(System.Int32,System.IntPtr)
     UnityEngine.AnimationCurve
         AddKey(System.Single,System.Single)
         AddKey(UnityEngine.Keyframe)
@@ -10625,7 +11318,6 @@ Summary:
         INTERNAL_CALL_AddKey_Internal(UnityEngine.AnimationCurve,UnityEngine.Keyframe&)
         INTERNAL_CALL_GetKey_Internal(UnityEngine.AnimationCurve,System.Int32,UnityEngine.Keyframe&)
         INTERNAL_CALL_MoveKey(UnityEngine.AnimationCurve,System.Int32,UnityEngine.Keyframe&)
-        Linear(System.Single,System.Single,System.Single,System.Single)
         MoveKey(System.Int32,UnityEngine.Keyframe)
         RemoveKey(System.Int32)
         set_keys(UnityEngine.Keyframe[])
@@ -10659,7 +11351,6 @@ Summary:
         get_backgroundLoadingPriority()
         get_buildGUID()
         get_companyName()
-        get_dataPath()
         get_genuine()
         get_genuineCheckAvailable()
         get_identifier()
@@ -10717,7 +11408,6 @@ Summary:
         LoadLevelAsync(System.String)
         ObjectToJSString(System.Object)
         OpenURL(System.String)
-        Quit()
         RegisterLogCallback(UnityEngine.Application/LogCallback)
         RegisterLogCallback(UnityEngine.Application/LogCallback,System.Boolean)
         RegisterLogCallbackThreaded(UnityEngine.Application/LogCallback)
@@ -10799,15 +11489,12 @@ Summary:
     UnityEngine.BoundingSphere
     UnityEngine.Bounds
         ClosestPoint(UnityEngine.Vector3)
-        Contains(UnityEngine.Vector3)
         Encapsulate(UnityEngine.Bounds)
         Expand(System.Single)
         Expand(UnityEngine.Vector3)
-        INTERNAL_CALL_Internal_Contains(UnityEngine.Bounds&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_GetClosestPoint(UnityEngine.Bounds&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_IntersectRay(UnityEngine.Ray&,UnityEngine.Bounds&,System.Single&)
         INTERNAL_CALL_Internal_SqrDistance(UnityEngine.Bounds&,UnityEngine.Vector3&)
-        Internal_Contains(UnityEngine.Bounds,UnityEngine.Vector3)
         Internal_GetClosestPoint(UnityEngine.Bounds&,UnityEngine.Vector3&)
         Internal_IntersectRay(UnityEngine.Ray&,UnityEngine.Bounds&,System.Single&)
         Internal_SqrDistance(UnityEngine.Bounds,UnityEngine.Vector3)
@@ -10841,7 +11528,6 @@ Summary:
         get_clearStencilAfterLightingPass()
         get_commandBufferCount()
         get_cullingMatrix()
-        get_current()
         get_depthTextureMode()
         get_far()
         get_fieldOfView()
@@ -10898,7 +11584,6 @@ Summary:
         INTERNAL_CALL_ViewportPointToRay(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Ray&)
         INTERNAL_CALL_ViewportToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_ViewportToWorldPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_CALL_WorldToScreenPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_WorldToViewportPoint(UnityEngine.Camera,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_get_backgroundColor(UnityEngine.Color&)
         INTERNAL_get_cameraToWorldMatrix(UnityEngine.Matrix4x4&)
@@ -10963,7 +11648,6 @@ Summary:
         set_layerCullDistances(System.Single[])
         set_layerCullSpherical(System.Boolean)
         set_near(System.Single)
-        set_nearClipPlane(System.Single)
         set_nonJitteredProjectionMatrix(UnityEngine.Matrix4x4)
         set_opaqueSortMode(UnityEngine.Rendering.OpaqueSortMode)
         set_orthographic(System.Boolean)
@@ -10996,7 +11680,6 @@ Summary:
         ViewportPointToRay(UnityEngine.Vector3)
         ViewportToScreenPoint(UnityEngine.Vector3)
         ViewportToWorldPoint(UnityEngine.Vector3)
-        WorldToScreenPoint(UnityEngine.Vector3)
         WorldToViewportPoint(UnityEngine.Vector3)
     UnityEngine.Camera/MonoOrStereoscopicEye
     UnityEngine.Camera/StereoscopicEye
@@ -11020,15 +11703,12 @@ Summary:
         .ctor()
     UnityEngine.Color
         AlphaMultiplied(System.Single)
-        get_blue()
-        get_cyan()
         get_gamma()
         get_gray()
         get_grayscale()
         get_grey()
         get_Item(System.Int32)
         get_linear()
-        get_magenta()
         get_maxColorComponent()
         HSVToRGB(System.Single,System.Single,System.Single)
         HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)
@@ -11037,7 +11717,6 @@ Summary:
         op_Division(UnityEngine.Color,System.Single)
         op_Implicit(UnityEngine.Vector4)
         op_Inequality(UnityEngine.Color,UnityEngine.Color)
-        op_Multiply(System.Single,UnityEngine.Color)
         op_Multiply(UnityEngine.Color,UnityEngine.Color)
         op_Subtraction(UnityEngine.Color,UnityEngine.Color)
         RGBMultiplied(System.Single)
@@ -11069,8 +11748,6 @@ Summary:
         GetComponents(System.Type)
         GetComponentsInChildren(System.Type)
         GetComponentsInChildren(System.Type,System.Boolean)
-        GetComponentsInChildren<T>()
-        GetComponentsInChildren<T>(System.Boolean)
         GetComponentsInParent(System.Type)
         GetComponentsInParent(System.Type,System.Boolean)
         GetComponentsInParent<T>()
@@ -11236,7 +11913,6 @@ Summary:
         .ctor()
         get_visible()
         INTERNAL_CALL_SetCursor(UnityEngine.Texture2D,UnityEngine.Vector2&,UnityEngine.CursorMode)
-        set_lockState(UnityEngine.CursorLockMode)
         set_visible(System.Boolean)
         SetCursor(UnityEngine.Texture2D,UnityEngine.CursorMode)
         SetCursor(UnityEngine.Texture2D,UnityEngine.Vector2,UnityEngine.CursorMode)
@@ -11440,16 +12116,9 @@ Summary:
         FindGameObjectsWithTag(System.String)
         FindGameObjectWithTag(System.String)
         FindWithTag(System.String)
-        get_active()
-        get_gameObject()
-        get_isStatic()
-        get_isStaticBatchable()
-        get_scene()
-        get_tag()
         GetComponent(System.String)
         GetComponentByName(System.String)
         GetComponentInChildren(System.Type)
-        GetComponentInParent<T>()
         GetComponents(System.Type)
         GetComponents(System.Type,System.Collections.Generic.List`1<UnityEngine.Component>)
         GetComponentsInChildren(System.Type)
@@ -11457,9 +12126,6 @@ Summary:
         GetComponentsInChildren<T>(System.Collections.Generic.List`1<T>)
         GetComponentsInParent(System.Type)
         GetComponentsInParent(System.Type,System.Boolean)
-        GetComponentsInParent<T>()
-        GetComponentsInParent<T>(System.Boolean)
-        INTERNAL_get_scene(UnityEngine.SceneManagement.Scene&)
         SendMessage(System.String)
         SendMessage(System.String,System.Object)
         SendMessage(System.String,UnityEngine.SendMessageOptions)
@@ -11473,6 +12139,46 @@ Summary:
         SetActiveRecursively(System.Boolean)
     UnityEngine.GeometryUtility
     UnityEngine.Gizmos
+        .ctor()
+        DrawCube(UnityEngine.Vector3,UnityEngine.Vector3)
+        DrawFrustum(UnityEngine.Vector3,System.Single,System.Single,System.Single,System.Single)
+        DrawGUITexture(UnityEngine.Rect,UnityEngine.Texture)
+        DrawGUITexture(UnityEngine.Rect,UnityEngine.Texture,System.Int32,System.Int32,System.Int32,System.Int32)
+        DrawGUITexture(UnityEngine.Rect,UnityEngine.Texture,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Material)
+        DrawGUITexture(UnityEngine.Rect,UnityEngine.Texture,UnityEngine.Material)
+        DrawIcon(UnityEngine.Vector3,System.String)
+        DrawIcon(UnityEngine.Vector3,System.String,System.Boolean)
+        DrawLine(UnityEngine.Vector3,UnityEngine.Vector3)
+        DrawMesh(UnityEngine.Mesh)
+        DrawMesh(UnityEngine.Mesh,System.Int32)
+        DrawMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3)
+        DrawMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+        DrawMesh(UnityEngine.Mesh,UnityEngine.Vector3)
+        DrawMesh(UnityEngine.Mesh,UnityEngine.Vector3,UnityEngine.Quaternion)
+        DrawRay(UnityEngine.Ray)
+        DrawRay(UnityEngine.Vector3,UnityEngine.Vector3)
+        DrawSphere(UnityEngine.Vector3,System.Single)
+        DrawWireMesh(UnityEngine.Mesh)
+        DrawWireMesh(UnityEngine.Mesh,System.Int32)
+        DrawWireMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3)
+        DrawWireMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion)
+        DrawWireMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+        DrawWireMesh(UnityEngine.Mesh,UnityEngine.Vector3)
+        DrawWireMesh(UnityEngine.Mesh,UnityEngine.Vector3,UnityEngine.Quaternion)
+        DrawWireMesh(UnityEngine.Mesh,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
+        DrawWireSphere(UnityEngine.Vector3,System.Single)
+        get_color()
+        get_matrix()
+        INTERNAL_CALL_DrawCube(UnityEngine.Vector3&,UnityEngine.Vector3&)
+        INTERNAL_CALL_DrawFrustum(UnityEngine.Vector3&,System.Single,System.Single,System.Single,System.Single)
+        INTERNAL_CALL_DrawGUITexture(UnityEngine.Rect&,UnityEngine.Texture,System.Int32,System.Int32,System.Int32,System.Int32,UnityEngine.Material)
+        INTERNAL_CALL_DrawIcon(UnityEngine.Vector3&,System.String,System.Boolean)
+        INTERNAL_CALL_DrawLine(UnityEngine.Vector3&,UnityEngine.Vector3&)
+        INTERNAL_CALL_DrawSphere(UnityEngine.Vector3&,System.Single)
+        INTERNAL_CALL_DrawWireMesh(UnityEngine.Mesh,System.Int32,UnityEngine.Vector3&,UnityEngine.Quaternion&,UnityEngine.Vector3&)
+        INTERNAL_CALL_DrawWireSphere(UnityEngine.Vector3&,System.Single)
+        INTERNAL_get_color(UnityEngine.Color&)
+        INTERNAL_get_matrix(UnityEngine.Matrix4x4&)
     UnityEngine.GL
         LINE_STRIP
         LINES
@@ -11502,8 +12208,6 @@ Summary:
         INTERNAL_set_modelview(UnityEngine.Matrix4x4&)
         InvalidateState()
         IssuePluginEvent(System.Int32)
-        IssuePluginEvent(System.IntPtr,System.Int32)
-        IssuePluginEventInternal(System.IntPtr,System.Int32)
         LoadIdentity()
         LoadOrtho()
         LoadPixelMatrix()
@@ -11527,7 +12231,6 @@ Summary:
         TexCoord3(System.Single,System.Single,System.Single)
         Vertex(UnityEngine.Vector3)
         Viewport(UnityEngine.Rect)
-    UnityEngine.GlobalJavaObjectRef
     UnityEngine.Gradient
         Evaluate(System.Single)
         get_alphaKeys()
@@ -11626,7 +12329,6 @@ Summary:
         get_eatKeyPressOnTextFieldFocus()
         get_gyro()
         get_imeIsSelected()
-        get_inputString()
         get_isGyroAvailable()
         get_location()
         get_multiTouchEnabled()
@@ -11635,15 +12337,12 @@ Summary:
         get_touches()
         get_touchPressureSupported()
         GetAccelerationEvent(System.Int32)
-        GetAxis(System.String)
         GetButton(System.String)
         GetButtonUp(System.String)
         GetJoystickNames()
         GetKey(System.String)
-        GetKey(UnityEngine.KeyCode)
         GetKeyDown(System.String)
         GetKeyDownString(System.String)
-        GetKeyInt(System.Int32)
         GetKeyString(System.String)
         GetKeyUp(System.String)
         GetKeyUp(UnityEngine.KeyCode)
@@ -11653,7 +12352,6 @@ Summary:
         INTERNAL_get_acceleration(UnityEngine.Vector3&)
         mainGyroIndex_Internal()
         ResetInputAxes()
-        set_backButtonLeavesApp(System.Boolean)
         set_compensateSensors(System.Boolean)
         set_eatKeyPressOnTextFieldFocus(System.Boolean)
         set_multiTouchEnabled(System.Boolean)
@@ -11712,10 +12410,8 @@ Summary:
     UnityEngine.IPPtrRemapper
     UnityEngine.ISerializedStateReader
     UnityEngine.ISerializedStateWriter
-    UnityEngine.jvalue
     UnityEngine.Keyframe
         .ctor(System.Single,System.Single)
-        .ctor(System.Single,System.Single,System.Single,System.Single)
         get_inTangent()
         get_outTangent()
         get_tangentMode()
@@ -11727,7 +12423,6 @@ Summary:
         set_time(System.Single)
         set_value(System.Single)
     UnityEngine.LayerMask
-        get_value()
         GetMask(System.String[])
         LayerToName(System.Int32)
         NameToLayer(System.String)
@@ -11814,6 +12509,46 @@ Summary:
     UnityEngine.LightType
     UnityEngine.LineAlignment
     UnityEngine.LineRenderer
+        .ctor()
+        get_alignment()
+        get_colorGradient()
+        get_endColor()
+        get_endWidth()
+        get_generateLightingData()
+        get_loop()
+        get_numCapVertices()
+        get_numCornerVertices()
+        get_numPositions()
+        get_positionCount()
+        get_startColor()
+        get_startWidth()
+        get_textureMode()
+        get_useWorldSpace()
+        get_widthCurve()
+        get_widthMultiplier()
+        GetPosition(System.Int32)
+        GetPositions(UnityEngine.Vector3[])
+        INTERNAL_CALL_GetPosition(UnityEngine.LineRenderer,System.Int32,UnityEngine.Vector3&)
+        INTERNAL_get_endColor(UnityEngine.Color&)
+        INTERNAL_get_startColor(UnityEngine.Color&)
+        set_alignment(UnityEngine.LineAlignment)
+        set_colorGradient(UnityEngine.Gradient)
+        set_endWidth(System.Single)
+        set_generateLightingData(System.Boolean)
+        set_loop(System.Boolean)
+        set_numCapVertices(System.Int32)
+        set_numCornerVertices(System.Int32)
+        set_numPositions(System.Int32)
+        set_positionCount(System.Int32)
+        set_startWidth(System.Single)
+        set_textureMode(UnityEngine.LineTextureMode)
+        set_widthCurve(UnityEngine.AnimationCurve)
+        set_widthMultiplier(System.Single)
+        SetColors(UnityEngine.Color,UnityEngine.Color)
+        SetPositions(UnityEngine.Vector3[])
+        SetVertexCount(System.Int32)
+        SetWidth(System.Single,System.Single)
+        Simplify(System.Single)
     UnityEngine.LineTextureMode
     UnityEngine.LineUtility
     UnityEngine.LocationInfo
@@ -11915,7 +12650,6 @@ Summary:
         set_doubleSidedGI(System.Boolean)
         set_enableInstancing(System.Boolean)
         set_globalIlluminationFlags(UnityEngine.MaterialGlobalIlluminationFlags)
-        set_mainTexture(UnityEngine.Texture)
         set_mainTextureOffset(UnityEngine.Vector2)
         set_mainTextureScale(UnityEngine.Vector2)
         set_renderQueue(System.Int32)
@@ -11930,15 +12664,12 @@ Summary:
         SetColorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Color>)
         SetColorArray(System.String,UnityEngine.Color[])
         SetColorArrayImpl(System.Int32,UnityEngine.Color[],System.Int32)
-        SetFloat(System.Int32,System.Single)
-        SetFloat(System.String,System.Single)
         SetFloatArray(System.Int32,System.Collections.Generic.List`1<System.Single>)
         SetFloatArray(System.Int32,System.Single[])
         SetFloatArray(System.Int32,System.Single[],System.Int32)
         SetFloatArray(System.String,System.Collections.Generic.List`1<System.Single>)
         SetFloatArray(System.String,System.Single[])
         SetFloatArrayImpl(System.Int32,System.Single[],System.Int32)
-        SetFloatImpl(System.Int32,System.Single)
         SetMatrixArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Matrix4x4>)
         SetMatrixArray(System.Int32,UnityEngine.Matrix4x4[])
         SetMatrixArray(System.Int32,UnityEngine.Matrix4x4[],System.Int32)
@@ -12010,7 +12741,6 @@ Summary:
         INTERNAL_CALL_GetMatrixImpl(UnityEngine.MaterialPropertyBlock,System.Int32,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_GetVectorImpl(UnityEngine.MaterialPropertyBlock,System.Int32,UnityEngine.Vector4&)
         INTERNAL_CALL_SetMatrixImpl(UnityEngine.MaterialPropertyBlock,System.Int32,UnityEngine.Matrix4x4&)
-        INTERNAL_CALL_SetVectorImpl(UnityEngine.MaterialPropertyBlock,System.Int32,UnityEngine.Vector4&)
         SetBuffer(System.Int32,UnityEngine.ComputeBuffer)
         SetBuffer(System.String,UnityEngine.ComputeBuffer)
         SetBufferImpl(System.Int32,UnityEngine.ComputeBuffer)
@@ -12035,7 +12765,6 @@ Summary:
         SetTexture(System.Int32,UnityEngine.Texture)
         SetTexture(System.String,UnityEngine.Texture)
         SetTextureImpl(System.Int32,UnityEngine.Texture)
-        SetVector(System.Int32,UnityEngine.Vector4)
         SetVector(System.String,UnityEngine.Vector4)
         SetVectorArray(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         SetVectorArray(System.Int32,UnityEngine.Vector4[])
@@ -12043,16 +12772,12 @@ Summary:
         SetVectorArray(System.String,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         SetVectorArray(System.String,UnityEngine.Vector4[])
         SetVectorArrayImpl(System.Int32,UnityEngine.Vector4[],System.Int32)
-        SetVectorImpl(System.Int32,UnityEngine.Vector4)
     UnityEngine.Mathf
         Deg2Rad
         Infinity
         NegativeInfinity
         PI
         Rad2Deg
-        Asin(System.Single)
-        Atan(System.Single)
-        Atan2(System.Single,System.Single)
         Ceil(System.Single)
         ClosestPowerOfTwo(System.Int32)
         CorrelatedColorTemperatureToRGB(System.Single)
@@ -12087,7 +12812,6 @@ Summary:
         SmoothDampAngle(System.Single,System.Single,System.Single&,System.Single,System.Single)
         SmoothDampAngle(System.Single,System.Single,System.Single&,System.Single,System.Single,System.Single)
         SmoothStep(System.Single,System.Single,System.Single)
-        Tan(System.Single)
     UnityEngine.Matrix4x4
         Determinant(UnityEngine.Matrix4x4)
         Frustum(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
@@ -12095,43 +12819,31 @@ Summary:
         FrustumInternal(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
         get_decomposeProjection()
         get_determinant()
-        get_inverse()
         get_isIdentity()
         get_lossyScale()
         get_rotation()
-        get_transpose()
-        get_zero()
-        GetRow(System.Int32)
         INTERNAL_CALL_Determinant(UnityEngine.Matrix4x4&)
         INTERNAL_CALL_FrustumInternal(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Matrix4x4&)
-        INTERNAL_CALL_Inverse(UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_Invert(UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_LookAt(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_Ortho(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,UnityEngine.Matrix4x4&)
         INTERNAL_CALL_Perspective(System.Single,System.Single,System.Single,System.Single,UnityEngine.Matrix4x4&)
-        INTERNAL_CALL_Transpose(UnityEngine.Matrix4x4&,UnityEngine.Matrix4x4&)
         INTERNAL_get_decomposeProjection(UnityEngine.FrustumPlanes&)
         INTERNAL_get_lossyScale(UnityEngine.Vector3&)
         INTERNAL_get_rotation(UnityEngine.Quaternion&)
-        Inverse(UnityEngine.Matrix4x4)
         Invert(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4&)
         LookAt(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
         MultiplyPoint(UnityEngine.Vector3)
         MultiplyVector(UnityEngine.Vector3)
         op_Equality(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
         op_Inequality(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
-        op_Multiply(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
         op_Multiply(UnityEngine.Matrix4x4,UnityEngine.Vector4)
         Ortho(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
         Perspective(System.Single,System.Single,System.Single,System.Single)
         Rotate(UnityEngine.Quaternion)
-        Scale(UnityEngine.Vector3)
-        SetRow(System.Int32,UnityEngine.Vector4)
-        SetTRS(UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
         ToString(System.String)
         TransformPlane(UnityEngine.Plane)
         Translate(UnityEngine.Vector3)
-        Transpose(UnityEngine.Matrix4x4)
         ValidTRS()
     UnityEngine.Mesh
         AddBlendShapeFrame(System.String,System.Single,UnityEngine.Vector3[],UnityEngine.Vector3[],UnityEngine.Vector3[])
@@ -12144,7 +12856,6 @@ Summary:
         get_bindposes()
         get_blendShapeCount()
         get_boneWeights()
-        get_bounds()
         get_colors()
         get_isReadable()
         get_triangles()
@@ -12185,18 +12896,14 @@ Summary:
         GetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         GetUVsImpl<T>(System.Int32,System.Collections.Generic.List`1<T>,System.Int32)
         GetVertices(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-        INTERNAL_get_bounds(UnityEngine.Bounds&)
         INTERNAL_set_bounds(UnityEngine.Bounds&)
         MarkDynamic()
         MarkDynamicImpl()
         Optimize()
         PrepareUserBuffer<T>(System.Collections.Generic.List`1<T>,System.Int32)
-        RecalculateNormals()
-        RecalculateNormalsImpl()
         RecalculateTangents()
         RecalculateTangentsImpl()
         ResizeList(System.Object,System.Int32)
-        SafeLength(System.Array)
         set_bindposes(UnityEngine.Matrix4x4[])
         set_boneWeights(UnityEngine.BoneWeight[])
         set_bounds(UnityEngine.Bounds)
@@ -12205,13 +12912,10 @@ Summary:
         set_normals(UnityEngine.Vector3[])
         set_subMeshCount(System.Int32)
         set_tangents(UnityEngine.Vector4[])
-        set_triangles(System.Int32[])
         set_uv(UnityEngine.Vector2[])
         set_uv2(UnityEngine.Vector2[])
         set_uv3(UnityEngine.Vector2[])
         set_uv4(UnityEngine.Vector2[])
-        set_vertices(UnityEngine.Vector3[])
-        SetArrayForChannel<T>(UnityEngine.Mesh/InternalShaderChannel,T[])
         SetArrayForChannel<T>(UnityEngine.Mesh/InternalShaderChannel,UnityEngine.Mesh/InternalVertexChannelType,System.Int32,T[])
         SetColors(System.Collections.Generic.List`1<UnityEngine.Color>)
         SetIndices(System.Int32[],UnityEngine.MeshTopology,System.Int32)
@@ -12220,16 +12924,13 @@ Summary:
         SetIndicesImpl(System.Int32,UnityEngine.MeshTopology,System.Array,System.Int32,System.Boolean)
         SetTriangles(System.Int32[],System.Int32)
         SetTriangles(System.Int32[],System.Int32,System.Boolean)
-        SetTrianglesImpl(System.Int32,System.Array,System.Int32)
         SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector3>)
         SetUVs(System.Int32,System.Collections.Generic.List`1<UnityEngine.Vector4>)
         UploadMeshData(System.Boolean)
         UploadMeshDataImpl(System.Boolean)
     UnityEngine.MeshFilter
         .ctor()
-        get_mesh()
         get_sharedMesh()
-        set_mesh(UnityEngine.Mesh)
         set_sharedMesh(UnityEngine.Mesh)
     UnityEngine.MeshRenderer
         .ctor()
@@ -12258,7 +12959,6 @@ Summary:
         StartCoroutine(System.String)
         StartCoroutine(System.String,System.Object)
         StartCoroutine_Auto(System.Collections.IEnumerator)
-        StopAllCoroutines()
         StopCoroutine(System.String)
     UnityEngine.MotionVectorGenerationMode
     UnityEngine.MultilineAttribute
@@ -12295,9 +12995,6 @@ Summary:
         DestroyObject(UnityEngine.Object,System.Single)
         DoesObjectWithInstanceIDExist(System.Int32)
         EnsureRunningOnMainThread()
-        FindObjectOfType(System.Type)
-        FindObjectOfType<T>()
-        FindObjectsOfType(System.Type)
         FindObjectsOfType<T>()
         FindObjectsOfTypeIncludingAssets(System.Type)
         FindSceneObjectsOfType(System.Type)
@@ -12627,22 +13324,16 @@ Summary:
     UnityEngine.QualityLevel
     UnityEngine.QualitySettings
     UnityEngine.Quaternion
-        AngleAxis(System.Single,UnityEngine.Vector3)
         AxisAngle(UnityEngine.Vector3,System.Single)
         EulerAngles(System.Single,System.Single,System.Single)
         EulerAngles(UnityEngine.Vector3)
         EulerRotation(System.Single,System.Single,System.Single)
         EulerRotation(UnityEngine.Vector3)
-        FromToRotation(UnityEngine.Vector3,UnityEngine.Vector3)
         get_Item(System.Int32)
-        INTERNAL_CALL_AngleAxis(System.Single,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_AxisAngle(UnityEngine.Vector3&,System.Single,UnityEngine.Quaternion&)
-        INTERNAL_CALL_FromToRotation(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_Internal_ToAxisAngleRad(UnityEngine.Quaternion&,UnityEngine.Vector3&,System.Single&)
-        INTERNAL_CALL_Lerp(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         INTERNAL_CALL_LerpUnclamped(UnityEngine.Quaternion&,UnityEngine.Quaternion&,System.Single,UnityEngine.Quaternion&)
         Internal_ToAxisAngleRad(UnityEngine.Quaternion,UnityEngine.Vector3&,System.Single&)
-        Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         LerpUnclamped(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
         Set(System.Single,System.Single,System.Single,System.Single)
         set_Item(System.Int32,System.Single)
@@ -12669,16 +13360,13 @@ Summary:
         ColorHSV(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
         get_insideUnitCircle()
         get_insideUnitSphere()
-        get_onUnitSphere()
         get_rotation()
         get_rotationUniform()
         get_seed()
         get_state()
-        get_value()
         GetRandomUnitCircle(UnityEngine.Vector2&)
         InitState(System.Int32)
         INTERNAL_get_insideUnitSphere(UnityEngine.Vector3&)
-        INTERNAL_get_onUnitSphere(UnityEngine.Vector3&)
         INTERNAL_get_rotation(UnityEngine.Quaternion&)
         INTERNAL_get_rotationUniform(UnityEngine.Quaternion&)
         INTERNAL_get_state(UnityEngine.Random/State&)
@@ -12692,7 +13380,6 @@ Summary:
         .ctor(System.Int32,System.Int32)
     UnityEngine.Ray
         set_direction(UnityEngine.Vector3)
-        set_origin(UnityEngine.Vector3)
         ToString(System.String)
     UnityEngine.Ray2D
     UnityEngine.Rect
@@ -12723,13 +13410,11 @@ Summary:
         .ctor()
         AddDrivenProperties(UnityEngine.Object,UnityEngine.DrivenTransformProperties)
         ClearDrivenProperties(UnityEngine.Object,System.Boolean)
-        get_anchoredPosition3D()
         get_offsetMax()
         get_offsetMin()
         GetRectInParentSpace()
         IsDriven()
         IsDriven(UnityEngine.DrivenTransformProperties)
-        set_anchoredPosition3D(UnityEngine.Vector3)
         set_offsetMax(UnityEngine.Vector2)
         set_offsetMin(UnityEngine.Vector2)
     UnityEngine.ReflectionProbe
@@ -12758,7 +13443,6 @@ Summary:
         get_receiveShadows()
         get_reflectionProbeUsage()
         get_shadowCastingMode()
-        get_sharedMaterial()
         get_sharedMaterials()
         get_sortingGroupID()
         get_sortingGroupOrder()
@@ -12783,7 +13467,6 @@ Summary:
         set_lightmapScaleOffset(UnityEngine.Vector4)
         set_lightProbeProxyVolumeOverride(UnityEngine.GameObject)
         set_lightProbeUsage(UnityEngine.Rendering.LightProbeUsage)
-        set_material(UnityEngine.Material)
         set_materials(UnityEngine.Material[])
         set_motionVectorGenerationMode(UnityEngine.MotionVectorGenerationMode)
         set_motionVectors(System.Boolean)
@@ -12797,7 +13480,6 @@ Summary:
         set_sharedMaterials(UnityEngine.Material[])
         set_sortingLayerID(System.Int32)
         set_sortingLayerName(System.String)
-        set_sortingOrder(System.Int32)
         set_staticBatchRootTransform(UnityEngine.Transform)
         set_useLightProbes(System.Boolean)
         SetStaticBatchInfo(System.Int32,System.Int32)
@@ -13123,8 +13805,6 @@ Summary:
         get_asset()
     UnityEngine.Resources
         .ctor()
-        Load(System.String)
-        Load(System.String,System.Type)
         Load<T>(System.String)
         LoadAll(System.String)
         LoadAll(System.String,System.Type)
@@ -13138,8 +13818,9 @@ Summary:
     UnityEngine.RotationOrder
     UnityEngine.RPC
     UnityEngine.RPCMode
-    UnityEngine.RuntimeInitializeLoadType
     UnityEngine.RuntimeInitializeOnLoadMethodAttribute
+        .ctor()
+        get_loadType()
     UnityEngine.RuntimeUndo
     UnityEngine.SceneManagement.Scene
         get_buildIndex()
@@ -13227,7 +13908,6 @@ Summary:
         set_fullScreen(System.Boolean)
         set_lockCursor(System.Boolean)
         set_orientation(UnityEngine.ScreenOrientation)
-        set_sleepTimeout(System.Int32)
         SetResolution(System.Int32,System.Int32,System.Boolean)
         SetResolution(System.Int32,System.Int32,System.Boolean,System.Int32)
     UnityEngine.ScreenOrientation
@@ -13235,7 +13915,6 @@ Summary:
         CreateInstance(System.String)
     UnityEngine.Scripting.APIUpdating.MovedFromAttribute
     UnityEngine.Scripting.GenerateManagedProxyAttribute
-    UnityEngine.Scripting.PreserveAttribute
     UnityEngine.Scripting.RequiredByNativeCodeAttribute
         .ctor(System.Boolean)
         .ctor(System.String,System.Boolean)
@@ -13520,8 +14199,6 @@ Summary:
         get_wrapModeV()
         get_wrapModeW()
         GetNativeTextureID()
-        GetNativeTexturePtr()
-        INTERNAL_CALL_GetNativeTexturePtr(UnityEngine.Texture,System.IntPtr&)
         Internal_GetDimension(UnityEngine.Texture)
         set_anisoLevel(System.Int32)
         set_anisotropicFiltering(UnityEngine.AnisotropicFiltering)
@@ -13583,7 +14260,6 @@ Summary:
         get_fixedTime()
         get_fixedUnscaledDeltaTime()
         get_fixedUnscaledTime()
-        get_frameCount()
         get_inFixedTimeStep()
         get_maximumDeltaTime()
         get_maximumParticleDeltaTime()
@@ -13642,22 +14318,16 @@ Summary:
     UnityEngine.TrailRenderer
     UnityEngine.Transform
         DetachChildren()
-        Find(System.String)
         FindChild(System.String)
         get_eulerAngles()
-        get_hasChanged()
         get_hierarchyCapacity()
         get_hierarchyCount()
-        get_localEulerAngles()
-        get_localToWorldMatrix()
-        get_lossyScale()
         get_root()
         get_up()
         GetChildCount()
         GetLocalEulerAngles(UnityEngine.RotationOrder)
         GetSiblingIndex()
         INTERNAL_CALL_GetLocalEulerAngles(UnityEngine.Transform,UnityEngine.RotationOrder,UnityEngine.Vector3&)
-        INTERNAL_CALL_InverseTransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_InverseTransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_LookAt(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_RotateAround(UnityEngine.Transform,UnityEngine.Vector3&,System.Single)
@@ -13667,10 +14337,7 @@ Summary:
         INTERNAL_CALL_SetPositionAndRotation(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Quaternion&)
         INTERNAL_CALL_TransformDirection(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_TransformVector(UnityEngine.Transform,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        INTERNAL_get_localToWorldMatrix(UnityEngine.Matrix4x4&)
-        INTERNAL_get_lossyScale(UnityEngine.Vector3&)
         InverseTransformDirection(System.Single,System.Single,System.Single)
-        InverseTransformDirection(UnityEngine.Vector3)
         InverseTransformPoint(System.Single,System.Single,System.Single)
         InverseTransformVector(System.Single,System.Single,System.Single)
         InverseTransformVector(UnityEngine.Vector3)
@@ -13690,12 +14357,9 @@ Summary:
         RotateAroundLocal(UnityEngine.Vector3,System.Single)
         set_eulerAngles(UnityEngine.Vector3)
         set_forward(UnityEngine.Vector3)
-        set_hasChanged(System.Boolean)
         set_hierarchyCapacity(System.Int32)
-        set_localEulerAngles(UnityEngine.Vector3)
         set_right(UnityEngine.Vector3)
         set_up(UnityEngine.Vector3)
-        SetAsLastSibling()
         SetLocalEulerAngles(UnityEngine.Vector3,UnityEngine.RotationOrder)
         SetPositionAndRotation(UnityEngine.Vector3,UnityEngine.Quaternion)
         SetSiblingIndex(System.Int32)
@@ -13765,7 +14429,6 @@ Summary:
         op_UnaryNegation(UnityEngine.Vector2)
         Reflect(UnityEngine.Vector2,UnityEngine.Vector2)
         Scale(UnityEngine.Vector2)
-        Set(System.Single,System.Single)
         SignedAngle(UnityEngine.Vector2,UnityEngine.Vector2)
         SmoothDamp(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2&,System.Single,System.Single,System.Single)
         SqrMagnitude()
@@ -13773,9 +14436,7 @@ Summary:
         ToString(System.String)
     UnityEngine.Vector2Int
     UnityEngine.Vector3
-        Angle(UnityEngine.Vector3,UnityEngine.Vector3)
         AngleBetween(UnityEngine.Vector3,UnityEngine.Vector3)
-        ClampMagnitude(UnityEngine.Vector3,System.Single)
         Exclude(UnityEngine.Vector3,UnityEngine.Vector3)
         get_fwd()
         get_negativeInfinity()
@@ -13783,23 +14444,17 @@ Summary:
         INTERNAL_CALL_Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         INTERNAL_CALL_RotateTowards(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.Vector3&)
-        INTERNAL_CALL_Slerp(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
         INTERNAL_CALL_SlerpUnclamped(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
         Internal_OrthoNormalize2(UnityEngine.Vector3&,UnityEngine.Vector3&)
         Internal_OrthoNormalize3(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
         LerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-        Normalize()
-        op_UnaryNegation(UnityEngine.Vector3)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&)
         OrthoNormalize(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&)
-        Project(UnityEngine.Vector3,UnityEngine.Vector3)
         ProjectOnPlane(UnityEngine.Vector3,UnityEngine.Vector3)
         Reflect(UnityEngine.Vector3,UnityEngine.Vector3)
         RotateTowards(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)
         Scale(UnityEngine.Vector3)
-        Scale(UnityEngine.Vector3,UnityEngine.Vector3)
         SignedAngle(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
-        Slerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         SlerpUnclamped(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single)
         SmoothDamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&,System.Single,System.Single)
@@ -13839,8 +14494,6 @@ Summary:
     UnityEngine.VRTextureUsage
     UnityEngine.WaitForFixedUpdate
         .ctor()
-    UnityEngine.WaitForSeconds
-        .ctor(System.Single)
     UnityEngine.WaitUntil
     UnityEngine.WaitWhile
     UnityEngine.WrapMode
@@ -14624,6 +15277,46 @@ Summary:
     UnityEngine.TextStylePainterParameters
     UnityEngine.TextureStylePainterParameters
 ---------------------------------------------------
+Assembly: UnityEngine.InputModule
+---------------------------------------------------
+Summary:
+  Total Type Removals = 8
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 0
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 15
+  References Removed = 0
+---------------------------------------------------
+    UnityEngineInternal.Input.NativeClickEvent
+    UnityEngineInternal.Input.NativeGenericEvent
+    UnityEngineInternal.Input.NativeInputEvent
+    UnityEngineInternal.Input.NativeInputEventType
+    UnityEngineInternal.Input.NativeInputSystem
+        .ctor()
+        get_zeroEventTime()
+        GetControlConfiguration(System.Int32,System.Int32)
+        GetDeviceConfiguration(System.Int32)
+        ReportInputDeviceDisconnect(System.Int32)
+        ReportInputDeviceReconnect(System.Int32)
+        ReportNewInputDevice(System.String)
+        SendEvents()
+        SendInput(System.IntPtr)
+        SendInput<TInputEvent>(TInputEvent)
+        SendOutput(System.Int32,System.Int32,System.Int32,System.IntPtr)
+        SendOutput<TOutputEvent>(System.Int32,System.Int32,TOutputEvent)
+        SetPollingFrequency(System.Single)
+        SetPollingFrequencyInternal(System.Single)
+        Update(UnityEngineInternal.Input.NativeInputUpdateType)
+    UnityEngineInternal.Input.NativeKeyEvent
+    UnityEngineInternal.Input.NativePointerEvent
+    UnityEngineInternal.Input.NativeTextEvent
+    UnityEngineInternal.Input.NativeTrackingEvent
+---------------------------------------------------
 Assembly: UnityEngine.ParticleSystemModule
 ---------------------------------------------------
 Summary:
@@ -14853,7 +15546,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 4
-  Total Method Removals = 515
+  Total Method Removals = 514
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.AnchoredJoint2D
@@ -15301,7 +15994,6 @@ Summary:
     UnityEngine.RaycastHit2D
         CompareTo(UnityEngine.RaycastHit2D)
         get_centroid()
-        get_fraction()
         get_rigidbody()
         get_transform()
         op_Implicit(UnityEngine.RaycastHit2D)
@@ -15437,7 +16129,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 7
-  Total Method Removals = 410
+  Total Method Removals = 397
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.BoxCollider
@@ -15494,7 +16186,6 @@ Summary:
     UnityEngine.Collider
         ClosestPoint(UnityEngine.Vector3)
         ClosestPointOnBounds(UnityEngine.Vector3)
-        get_attachedRigidbody()
         get_bounds()
         get_contactOffset()
         get_enabled()
@@ -15616,7 +16307,6 @@ Summary:
         CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[])
         CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)
         CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)
-        CapsuleCastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         CheckBox(UnityEngine.Vector3,UnityEngine.Vector3)
         CheckBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion)
         CheckBox(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Quaternion,System.Int32)
@@ -15656,7 +16346,6 @@ Summary:
         INTERNAL_CALL_BoxCastAll(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_BoxCastNonAlloc(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.RaycastHit[],UnityEngine.Quaternion&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_CapsuleCastAll(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
-        INTERNAL_CALL_CapsuleCastNonAlloc(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_CheckBox(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.Quaternion&,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_CheckCapsule(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_CheckSphere(UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
@@ -15669,7 +16358,6 @@ Summary:
         INTERNAL_CALL_OverlapCapsule(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_OverlapCapsuleNonAlloc(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Collider[],System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_CALL_OverlapSphereNonAlloc(UnityEngine.Vector3&,System.Single,UnityEngine.Collider[],System.Int32,UnityEngine.QueryTriggerInteraction)
-        INTERNAL_CALL_RaycastNonAlloc(UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         Internal_CapsuleCast(UnityEngine.Vector3,UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         INTERNAL_get_gravity(UnityEngine.Vector3&)
         INTERNAL_set_gravity(UnityEngine.Vector3&)
@@ -15700,12 +16388,8 @@ Summary:
         OverlapSphereNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Collider[],System.Int32,UnityEngine.QueryTriggerInteraction)
         RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[])
         RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single)
-        RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32)
-        RaycastNonAlloc(UnityEngine.Ray,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[])
         RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)
-        RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)
-        RaycastNonAlloc(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         set_autoSimulation(System.Boolean)
         set_autoSyncTransforms(System.Boolean)
         set_bounceThreshold(System.Single)
@@ -15747,8 +16431,6 @@ Summary:
         SphereCastAll(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[])
         SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single)
-        SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single,System.Int32)
-        SphereCastNonAlloc(UnityEngine.Ray,System.Single,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
         SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[])
         SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single)
         SphereCastNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Vector3,UnityEngine.RaycastHit[],System.Single,System.Int32)
@@ -15758,11 +16440,9 @@ Summary:
         CalculateRaycastTexCoord(UnityEngine.Vector2&,UnityEngine.Collider,UnityEngine.Vector2,UnityEngine.Vector3,System.Int32,System.Int32)
         get_barycentricCoordinate()
         get_lightmapCoord()
-        get_rigidbody()
         get_textureCoord()
         get_textureCoord1()
         get_textureCoord2()
-        get_transform()
         get_triangleIndex()
         INTERNAL_CALL_CalculateRaycastTexCoord(UnityEngine.Vector2&,UnityEngine.Collider,UnityEngine.Vector2&,UnityEngine.Vector3&,System.Int32,System.Int32)
         set_barycentricCoordinate(UnityEngine.Vector3)
@@ -15770,7 +16450,6 @@ Summary:
         set_normal(UnityEngine.Vector3)
         set_point(UnityEngine.Vector3)
     UnityEngine.Rigidbody
-        .ctor()
         AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single)
         AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single)
         AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)
@@ -16021,7 +16700,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 36
+  Total Method Removals = 35
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.EventSystems.AxisEventData
@@ -16040,8 +16719,6 @@ Summary:
     UnityEngine.EventSystems.PointerInputModule/MouseState
         AnyPressesThisFrame()
         AnyReleasesThisFrame()
-    UnityEngine.EventSystems.RaycastResult
-        Clear()
     UnityEngine.UI.AnimationTriggers
         set_disabledTrigger(System.String)
         set_highlightedTrigger(System.String)
@@ -16117,7 +16794,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 0
-  Total Method Removals = 48
+  Total Method Removals = 47
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.AdditionalCanvasShaderChannels
@@ -16146,7 +16823,6 @@ Summary:
         .ctor()
         set_blocksRaycasts(System.Boolean)
         set_ignoreParentGroups(System.Boolean)
-        set_interactable(System.Boolean)
     UnityEngine.CanvasRenderer
         .ctor()
         AddUIVertexStream(System.Collections.Generic.List`1<UnityEngine.UIVertex>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Color32>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector2>,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector4>)
@@ -16639,6 +17315,101 @@ Summary:
         UnEscapeURL(System.String,System.Text.Encoding)
     UnityEngine.WWWAudioExtensions
 ---------------------------------------------------
+Assembly: UnityEngine.VRModule
+---------------------------------------------------
+Summary:
+  Total Type Removals = 17
+    Nested = 0
+    Interfaces = 0
+    Abstract Classes = 7
+    Generic Types = 0
+    Generic Interfaces = 0
+    Generic Abstract Classes = 0
+    Attributes = 0
+  Total Field Removals = 0
+  Total Method Removals = 58
+  References Removed = 0
+---------------------------------------------------
+    UnityEngine.Experimental.XR.Boundary
+    UnityEngine.Internal.VR.VRTestMock
+    UnityEngine.VR.InputTracking
+    UnityEngine.VR.TrackingSpaceType
+    UnityEngine.VR.UserPresenceState
+    UnityEngine.VR.VRDevice
+    UnityEngine.VR.VRDeviceType
+    UnityEngine.VR.VRNode
+    UnityEngine.VR.VRNodeState
+    UnityEngine.VR.VRSettings
+    UnityEngine.VR.VRStats
+    UnityEngine.XR.InputTracking
+        add_nodeAdded(System.Action`1<UnityEngine.XR.XRNodeState>)
+        add_nodeRemoved(System.Action`1<UnityEngine.XR.XRNodeState>)
+        add_trackingAcquired(System.Action`1<UnityEngine.XR.XRNodeState>)
+        add_trackingLost(System.Action`1<UnityEngine.XR.XRNodeState>)
+        get_disablePositionalTracking()
+        GetNodeName(System.UInt64)
+        GetNodeStates(System.Collections.Generic.List`1<UnityEngine.XR.XRNodeState>)
+        GetNodeStatesInternal(System.Object)
+        Recenter()
+        remove_nodeAdded(System.Action`1<UnityEngine.XR.XRNodeState>)
+        remove_nodeRemoved(System.Action`1<UnityEngine.XR.XRNodeState>)
+        remove_trackingAcquired(System.Action`1<UnityEngine.XR.XRNodeState>)
+        remove_trackingLost(System.Action`1<UnityEngine.XR.XRNodeState>)
+    UnityEngine.XR.TrackingSpaceType
+    UnityEngine.XR.UserPresenceState
+    UnityEngine.XR.WSA.HolographicSettings
+    UnityEngine.XR.WSA.PositionalLocatorState
+    UnityEngine.XR.WSA.WorldManager
+    UnityEngine.XR.XRDevice
+        DisableAutoXRCameraTracking(UnityEngine.Camera,System.Boolean)
+        DisableAutoXRCameraTrackingInternal(UnityEngine.Camera,System.Boolean)
+        get_family()
+        get_fovZoomFactor()
+        get_isPresent()
+        get_model()
+        get_refreshRate()
+        get_userPresence()
+        GetTrackingSpaceType()
+        set_fovZoomFactor(System.Single)
+        SetTrackingSpaceType(UnityEngine.XR.TrackingSpaceType)
+    UnityEngine.XR.XRNodeState
+        get_nodeType()
+        get_tracked()
+        get_uniqueID()
+        set_acceleration(UnityEngine.Vector3)
+        set_angularAcceleration(UnityEngine.Vector3)
+        set_angularVelocity(UnityEngine.Vector3)
+        set_position(UnityEngine.Vector3)
+        set_rotation(UnityEngine.Quaternion)
+        set_velocity(UnityEngine.Vector3)
+        TryGet<T>(T,UnityEngine.XR.AvailableTrackingData,T&)
+        TryGetAcceleration(UnityEngine.Vector3&)
+        TryGetAngularAcceleration(UnityEngine.Vector3&)
+        TryGetAngularVelocity(UnityEngine.Vector3&)
+        TryGetPosition(UnityEngine.Vector3&)
+        TryGetRotation(UnityEngine.Quaternion&)
+        TryGetVelocity(UnityEngine.Vector3&)
+    UnityEngine.XR.XRSettings
+        get_eyeTextureDesc()
+        get_eyeTextureResolutionScale()
+        get_isDeviceActive()
+        get_occlusionMaskScale()
+        get_renderScale()
+        get_renderViewportScale()
+        get_renderViewportScaleInternal()
+        get_showDeviceView()
+        INTERNAL_get_eyeTextureDesc(UnityEngine.RenderTextureDescriptor&)
+        LoadDeviceByName(System.String)
+        LoadDeviceByName(System.String[])
+        set_enabled(System.Boolean)
+        set_eyeTextureResolutionScale(System.Single)
+        set_occlusionMaskScale(System.Single)
+        set_renderScale(System.Single)
+        set_renderViewportScale(System.Single)
+        set_renderViewportScaleInternal(System.Single)
+        set_showDeviceView(System.Boolean)
+    UnityEngine.XR.XRStats
+---------------------------------------------------
 Assembly: UnityEngine.WebModule
 ---------------------------------------------------
 Summary:
@@ -16704,7 +17475,7 @@ Summary:
         set_CurrentJsonSerializerStrategy(SimpleJson.IJsonSerializerStrategy)
 ---------------------------------------------------
 Mono.Cecil.ExportedType Removals:
-  Total: 970
+  Total: 933
 ---------------------------------------------------
 JetBrains.Annotations.AssertionMethodAttribute
 JetBrains.Annotations.BaseTypeRequiredAttribute
@@ -16726,7 +17497,6 @@ JetBrains.Annotations.PublicAPIAttribute
 JetBrains.Annotations.PureAttribute
 JetBrains.Annotations.StringFormatMethodAttribute
 JetBrains.Annotations.UsedImplicitlyAttribute
-UnityEngine._AndroidJNIHelper
 UnityEngine.AccelerationEvent
 UnityEngine.Accessibility.VisionUtility
 UnityEngine.AdditionalCanvasShaderChannels
@@ -16764,16 +17534,6 @@ UnityEngine.Analytics.Gender
 UnityEngine.Analytics.PerformanceReporting
 UnityEngine.Analytics.UnityAnalyticsHandler
 UnityEngine.AnchoredJoint2D
-UnityEngine.AndroidJavaClass
-UnityEngine.AndroidJavaException
-UnityEngine.AndroidJavaObject
-UnityEngine.AndroidJavaProxy
-UnityEngine.AndroidJavaRunnable
-UnityEngine.AndroidJavaRunnableProxy
-UnityEngine.AndroidJNI
-UnityEngine.AndroidJNIHelper
-UnityEngine.AndroidJNISafe
-UnityEngine.AndroidReflection
 UnityEngine.Animation
 UnityEngine.AnimationBlendMode
 UnityEngine.AnimationClip
@@ -16807,15 +17567,12 @@ UnityEngine.AssetBundle
 UnityEngine.AssetBundleManifest
 UnityEngine.AtomicSafetyHandle
 UnityEngine.AtomicSafetyHandleVersionMask
-UnityEngine.Audio.AudioMixer
-UnityEngine.Audio.AudioMixerGroup
 UnityEngine.Audio.AudioMixerSnapshot
 UnityEngine.Audio.AudioMixerUpdateMode
 UnityEngine.AudioBehaviour
 UnityEngine.AudioChorusFilter
 UnityEngine.AudioClipLoadType
 UnityEngine.AudioCompressionFormat
-UnityEngine.AudioConfiguration
 UnityEngine.AudioDataLoadState
 UnityEngine.AudioDistortionFilter
 UnityEngine.AudioEchoFilter
@@ -16824,9 +17581,6 @@ UnityEngine.AudioLowPassFilter
 UnityEngine.AudioReverbFilter
 UnityEngine.AudioReverbPreset
 UnityEngine.AudioReverbZone
-UnityEngine.AudioRolloffMode
-UnityEngine.AudioSourceCurveType
-UnityEngine.AudioSpeakerMode
 UnityEngine.AudioVelocityUpdateMode
 UnityEngine.Avatar
 UnityEngine.AvatarBuilder
@@ -17132,7 +17886,6 @@ UnityEngine.Experimental.XR.Boundary
 UnityEngine.Experimental.XR.Boundary/Type
 UnityEngine.ExposedPropertyResolver
 UnityEngine.ExposedReference`1
-UnityEngine.FFTWindow
 UnityEngine.FingerDoF
 UnityEngine.FixedJoint
 UnityEngine.FixedJoint2D
@@ -17145,8 +17898,6 @@ UnityEngine.FrustumPlanes
 UnityEngine.FullScreenMovieControlMode
 UnityEngine.FullScreenMovieScalingMode
 UnityEngine.GeometryUtility
-UnityEngine.Gizmos
-UnityEngine.GlobalJavaObjectRef
 UnityEngine.GradientAlphaKey
 UnityEngine.GradientColorKey
 UnityEngine.GradientMode
@@ -17231,7 +17982,6 @@ UnityEngine.JointSpring
 UnityEngine.JointSuspension2D
 UnityEngine.JointTranslationLimits2D
 UnityEngine.JsonUtility
-UnityEngine.jvalue
 UnityEngine.LegDoF
 UnityEngine.LensFlare
 UnityEngine.LightmapBakeType
@@ -17250,7 +18000,6 @@ UnityEngine.LightRenderMode
 UnityEngine.LightShadows
 UnityEngine.LightType
 UnityEngine.LineAlignment
-UnityEngine.LineRenderer
 UnityEngine.LineTextureMode
 UnityEngine.LineUtility
 UnityEngine.LocationInfo
@@ -17481,8 +18230,6 @@ UnityEngine.RotationOrder
 UnityEngine.RPC
 UnityEngine.RPCMode
 UnityEngine.RuntimeAnimatorController
-UnityEngine.RuntimeInitializeLoadType
-UnityEngine.RuntimeInitializeOnLoadMethodAttribute
 UnityEngine.RuntimeUndo
 UnityEngine.ScaleMode
 UnityEngine.SceneManagement.Scene/LoadingState
@@ -17491,7 +18238,6 @@ UnityEngine.ScreenCapture
 UnityEngine.ScreenOrientation
 UnityEngine.Scripting.APIUpdating.MovedFromAttribute
 UnityEngine.Scripting.GenerateManagedProxyAttribute
-UnityEngine.Scripting.PreserveAttribute
 UnityEngine.ScriptingRuntime
 UnityEngine.ScrollWaitDefinitions
 UnityEngine.Security
@@ -17619,8 +18365,6 @@ UnityEngine.WrapMode
 UnityEngine.WWWAudioExtensions
 UnityEngine.XR.ARBackgroundRenderer
 UnityEngine.XR.ARRenderMode
-UnityEngine.XR.AvailableTrackingData
-UnityEngine.XR.InputTracking
 UnityEngine.XR.Tango.AreaLearningMode
 UnityEngine.XR.Tango.CoordinateFrame
 UnityEngine.XR.Tango.CoordinateFramePair
@@ -17650,10 +18394,6 @@ UnityEngine.XR.UserPresenceState
 UnityEngine.XR.WSA.HolographicSettings
 UnityEngine.XR.WSA.PositionalLocatorState
 UnityEngine.XR.WSA.WorldManager
-UnityEngine.XR.XRDevice
-UnityEngine.XR.XRNode
-UnityEngine.XR.XRNodeState
-UnityEngine.XR.XRSettings
 UnityEngine.XR.XRStats
 UnityEngineInternal.APIUpdaterRuntimeServices
 UnityEngineInternal.FastCallExceptionHandler
@@ -17661,18 +18401,12 @@ UnityEngineInternal.GetMethodDelegate
 UnityEngineInternal.GIDebugVisualisation
 UnityEngineInternal.GITextureType
 UnityEngineInternal.Input.NativeClickEvent
-UnityEngineInternal.Input.NativeDeviceDiscoveredCallback
-UnityEngineInternal.Input.NativeEventCallback
 UnityEngineInternal.Input.NativeGenericEvent
-UnityEngineInternal.Input.NativeInputDeviceInfo
 UnityEngineInternal.Input.NativeInputEvent
 UnityEngineInternal.Input.NativeInputEventType
-UnityEngineInternal.Input.NativeInputSystem
-UnityEngineInternal.Input.NativeInputUpdateType
 UnityEngineInternal.Input.NativeKeyEvent
 UnityEngineInternal.Input.NativePointerEvent
 UnityEngineInternal.Input.NativeTextEvent
 UnityEngineInternal.Input.NativeTrackingEvent
 UnityEngineInternal.Input.NativeTrackingEvent/Flags
-UnityEngineInternal.Input.NativeUpdateCallback
 UnityEngineInternal.LightmapType
