@@ -10,7 +10,7 @@ public class JPTurret : MonoBehaviour {
 	public float xDistance;
 	public float yDistance;
 	public GameObject target;
-	bool tracking = true;
+	bool tracking = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +18,13 @@ public class JPTurret : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Vector3 distance = target.transform.position - this.transform.position;
+		if((distance.x > 0)&&(distance.x < xDistance)) {
+			if((distance.z < yDistance/xDistance*distance.x)&&(distance.z > -yDistance/xDistance*distance.x)) {
+				print ("Object Found");
+				tracking = true;
+			}
+		}
 		if (!tracking) {
 			currRotation += direction * rotationSpeed;
 			this.transform.rotation = Quaternion.Euler (new Vector3 (0, currRotation, 0));
@@ -41,7 +48,12 @@ public class JPTurret : MonoBehaviour {
 	}
 	public void getNearbyEnemies (GameObject[] enemies) {
 		for (int count = 0; count < enemies.Length; count ++) {
-			
+			Vector3 distance = enemies [count].transform.position - this.transform.position;
+			if((distance.x > 0)&&(distance.x < xDistance)) {
+				if((distance.y < yDistance/xDistance*distance.x)&&(distance.y > -yDistance/xDistance*distance.x)) {
+					
+				}
+			}
 		}
 	}
 }
