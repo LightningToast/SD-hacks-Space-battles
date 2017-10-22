@@ -56,9 +56,9 @@ public class TTMovement : NetworkBehaviour {
 		}
 
 		//if it's still far just continue moving
-		if((Mathf.Abs(TargetPos.x-transform.position.x) > 1) || 
-			(Mathf.Abs(TargetPos.y-transform.position.y) > 1) || 
-			(Mathf.Abs(TargetPos.z-transform.position.z) > 1)){
+		if((Mathf.Abs(TargetPos.x-transform.position.x) > 0.1f) || 
+			(Mathf.Abs(TargetPos.y-transform.position.y) > 0.1f) || 
+			(Mathf.Abs(TargetPos.z-transform.position.z) > 0.1f)){
 
 			var lookPos = TargetPos - transform.position;
 			lookPos.y = 0;
@@ -120,6 +120,6 @@ public class TTMovement : NetworkBehaviour {
 	public void RpcSetName(int playerNum, int shipNum)
 	{
 		this.name = "Player" + playerNum + "Ship" + shipNum;
-		//this.transform.parent = GameObject.Find ("ImageTarget").transform;
+		this.transform.parent = GameObject.Find ("RandomCube").transform;
 	}
 }

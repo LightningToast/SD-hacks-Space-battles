@@ -463,8 +463,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1633496785506242}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.35, y: -1.84, z: 4.09}
-  m_LocalScale: {x: 0.45890534, y: 0.45890477, z: 0.45890525}
+  m_LocalPosition: {x: -1.3693, y: -1.2127, z: -0.69406}
+  m_LocalScale: {x: 0.13724157, y: 0.1372414, z: 0.13724154}
   m_Children:
   - {fileID: 4275390039688972}
   - {fileID: 4370552688721090}
@@ -630,8 +630,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1011766106307390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.458352, y: 15.594208, z: 9.833694}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_Children:
   - {fileID: 4458686143392026}
   - {fileID: 4616695098577894}
@@ -673,8 +673,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1435839688644708}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.09, y: -1.84, z: -2.600625}
-  m_LocalScale: {x: 0.4589051, y: 0.45890477, z: 0.458905}
+  m_LocalPosition: {x: -0.47209, y: -1.2127, z: 1.0375}
+  m_LocalScale: {x: 0.1372415, y: 0.1372414, z: 0.13724147}
   m_Children:
   - {fileID: 4009236781192552}
   - {fileID: 4535987494919964}
@@ -716,8 +716,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1597038632791472}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 4.170666, y: -1.84, z: 4.152378}
-  m_LocalScale: {x: 0.4589051, y: 0.45890477, z: 0.458905}
+  m_LocalPosition: {x: 0.47594, y: -1.2127, z: -0.72097}
+  m_LocalScale: {x: 0.1372415, y: 0.1372414, z: 0.13724147}
   m_Children:
   - {fileID: 4962211200731880}
   - {fileID: 4165476430747110}
@@ -1569,7 +1569,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.06, y: 1.54, z: 3.22}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114718432295689332
 MonoBehaviour:
@@ -1584,8 +1584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetPos: {x: 0, y: 0, z: 0}
   Offset: {x: 0, y: 0, z: 0}
-  TurnSpeed: 25
-  MoveSpeed: 25
+  TurnSpeed: 10
+  MoveSpeed: 10
   shipController: {fileID: 0}
 --- !u!114 &114852348495386948
 MonoBehaviour:
