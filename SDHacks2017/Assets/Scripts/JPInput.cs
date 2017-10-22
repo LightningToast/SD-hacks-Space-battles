@@ -31,7 +31,7 @@ public class JPInput : NetworkBehaviour {
 
 		}
 		if (isLocalPlayer) {
-			
+			//GameObject.Find ("HitCubeParent").transform.GetChild (0).gameObject.GetComponent<> ();
 		}
 	}
 	
