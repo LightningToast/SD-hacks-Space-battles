@@ -1584,9 +1584,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetPos: {x: 0, y: 0, z: 0}
   Offset: {x: 0, y: 0, z: 0}
-  TurnSpeed: 10
-  MoveSpeed: 10
+  TurnSpeed: 25
+  MoveSpeed: 4
   shipController: {fileID: 0}
+  circleTarget: 1
 --- !u!114 &114852348495386948
 MonoBehaviour:
   m_ObjectHideFlags: 1

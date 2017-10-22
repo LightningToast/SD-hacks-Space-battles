@@ -10,6 +10,7 @@ public class TTMovement : NetworkBehaviour {
 	public float MoveSpeed = 25.0f;
 	private Vector3 PrevPos;
 	public GameObject shipController;
+	public bool circleTarget = false;
 	GameObject target;
 	int mode;
 
@@ -56,9 +57,9 @@ public class TTMovement : NetworkBehaviour {
 		}
 
 		//if it's still far just continue moving
-		if((Mathf.Abs(TargetPos.x-transform.position.x) > 0.1f) || 
-			(Mathf.Abs(TargetPos.y-transform.position.y) > 0.1f) || 
-			(Mathf.Abs(TargetPos.z-transform.position.z) > 0.1f)){
+		if((Mathf.Abs(TargetPos.x-transform.position.x) > 0.01f) || 
+			(Mathf.Abs(TargetPos.y-transform.position.y) > 0.01f) || 
+			(Mathf.Abs(TargetPos.z-transform.position.z) > 0.01f)){
 
 			var lookPos = TargetPos - transform.position;
 			lookPos.y = 0;
@@ -69,7 +70,9 @@ public class TTMovement : NetworkBehaviour {
 
 			//else manually do something else
 		}  else {
-			this.GetComponent<Rigidbody> ().velocity = Vector3.zero;
+			if (!circleTarget) {
+				this.GetComponent<Rigidbody> ().velocity = Vector3.zero;
+			}
 		}
 	}
 
@@ -120,6 +123,6 @@ public class TTMovement : NetworkBehaviour {
 	public void RpcSetName(int playerNum, int shipNum)
 	{
 		this.name = "Player" + playerNum + "Ship" + shipNum;
-		this.transform.parent = GameObject.Find ("RandomCube").transform;
+		this.transform.parent = GameObject.Find ("HitCubeParent").transform.GetChild(0);
 	}
 }
