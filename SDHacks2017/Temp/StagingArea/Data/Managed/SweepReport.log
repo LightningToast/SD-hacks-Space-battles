@@ -2,7 +2,7 @@
 All Assemblies
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 2249
+  Total Type Removals = 2248
     Nested = 195
     Interfaces = 142
     Abstract Classes = 152
@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 174
   Total Field Removals = 759
-  Total Method Removals = 12211
+  Total Method Removals = 12209
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -15428,7 +15428,7 @@ Summary:
 Assembly: UnityEngine.PhysicsModule
 ---------------------------------------------------
 Summary:
-  Total Type Removals = 24
+  Total Type Removals = 23
     Nested = 0
     Interfaces = 0
     Abstract Classes = 0
@@ -15437,7 +15437,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 0
   Total Field Removals = 7
-  Total Method Removals = 412
+  Total Method Removals = 410
   References Removed = 0
 ---------------------------------------------------
     UnityEngine.BoxCollider
@@ -15550,7 +15550,6 @@ Summary:
         get_transform()
         set_push(System.Boolean)
     UnityEngine.FixedJoint
-    UnityEngine.ForceMode
     UnityEngine.HingeJoint
     UnityEngine.Joint
     UnityEngine.JointDrive
@@ -15777,7 +15776,6 @@ Summary:
         AddExplosionForce(System.Single,UnityEngine.Vector3,System.Single,System.Single,UnityEngine.ForceMode)
         AddForce(System.Single,System.Single,System.Single)
         AddForce(System.Single,System.Single,System.Single,UnityEngine.ForceMode)
-        AddForce(UnityEngine.Vector3)
         AddForce(UnityEngine.Vector3,UnityEngine.ForceMode)
         AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3)
         AddForceAtPosition(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.ForceMode)
@@ -15821,7 +15819,6 @@ Summary:
         GetPointVelocity(UnityEngine.Vector3)
         GetRelativePointVelocity(UnityEngine.Vector3)
         INTERNAL_CALL_AddExplosionForce(UnityEngine.Rigidbody,System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
-        INTERNAL_CALL_AddForce(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
         INTERNAL_CALL_AddForceAtPosition(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.Vector3&,UnityEngine.ForceMode)
         INTERNAL_CALL_AddRelativeForce(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
         INTERNAL_CALL_AddRelativeTorque(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
@@ -16707,7 +16704,7 @@ Summary:
         set_CurrentJsonSerializerStrategy(SimpleJson.IJsonSerializerStrategy)
 ---------------------------------------------------
 Mono.Cecil.ExportedType Removals:
-  Total: 971
+  Total: 970
 ---------------------------------------------------
 JetBrains.Annotations.AssertionMethodAttribute
 JetBrains.Annotations.BaseTypeRequiredAttribute
@@ -17142,7 +17139,6 @@ UnityEngine.FixedJoint2D
 UnityEngine.Flare
 UnityEngine.FlareLayer
 UnityEngine.FogMode
-UnityEngine.ForceMode
 UnityEngine.ForceMode2D
 UnityEngine.FrictionJoint2D
 UnityEngine.FrustumPlanes

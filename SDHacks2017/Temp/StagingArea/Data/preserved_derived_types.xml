@@ -1,6 +1,7 @@
 <linker>
 <assembly fullname="Assembly-CSharp">
 <type fullname="JPEnemyTracking" preserve="all"/>
+<type fullname="JPFire" preserve="all"/>
 <type fullname="JPInput" preserve="all"/>
 <type fullname="JPTurret" preserve="all"/>
 <type fullname="TTMovement" preserve="all"/>

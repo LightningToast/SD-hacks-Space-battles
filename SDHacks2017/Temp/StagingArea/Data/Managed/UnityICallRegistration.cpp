@@ -2058,6 +2058,10 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Rigidbody
 
+		//System.Void UnityEngine.Rigidbody::INTERNAL_CALL_AddForce(UnityEngine.Rigidbody,UnityEngine.Vector3&,UnityEngine.ForceMode)
+		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddForce();
+		Register_UnityEngine_Rigidbody_INTERNAL_CALL_AddForce();
+
 		//System.Void UnityEngine.Rigidbody::INTERNAL_CALL_MovePosition(UnityEngine.Rigidbody,UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_INTERNAL_CALL_MovePosition();
 		Register_UnityEngine_Rigidbody_INTERNAL_CALL_MovePosition();

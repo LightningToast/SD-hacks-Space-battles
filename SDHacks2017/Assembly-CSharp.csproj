@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\JPEnemyTracking.cs" />
+     <Compile Include="Assets\Scripts\JPFire.cs" />
      <Compile Include="Assets\Scripts\JPInput.cs" />
      <Compile Include="Assets\Scripts\JPTurret.cs" />
      <Compile Include="Assets\Scripts\TTMovement.cs" />

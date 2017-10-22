@@ -85,8 +85,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   marker: {fileID: 0}
+  controlPanel: {fileID: 0}
   playerNumber: 0
   shipList:
+  - {fileID: 1438996744923186, guid: e353125a8b73b4d9da07d3357f1bd22e, type: 2}
+  - {fileID: 1438996744923186, guid: e353125a8b73b4d9da07d3357f1bd22e, type: 2}
+  - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
+  - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
+  - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
+  - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
   - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
   - {fileID: 1011766106307390, guid: 6657b8366a7014935aac00996e883c64, type: 2}
   spawnedShipList: []
+  picked: {r: 0, g: 0, b: 0, a: 0}

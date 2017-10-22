@@ -443,6 +443,7 @@ UnityEngine.RenderTexture::Internal_GetHeight
 UnityEngine.RenderTexture::Internal_GetWidth
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.Resources::FindObjectsOfTypeAll
+UnityEngine.Rigidbody::INTERNAL_CALL_AddForce
 UnityEngine.Rigidbody::INTERNAL_CALL_MovePosition
 UnityEngine.Rigidbody::INTERNAL_CALL_MoveRotation
 UnityEngine.Rigidbody::INTERNAL_get_angularVelocity

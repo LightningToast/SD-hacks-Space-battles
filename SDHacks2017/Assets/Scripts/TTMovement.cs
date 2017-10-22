@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class TTMovement : NetworkBehaviour {
 	public Vector3 TargetPos = new Vector3(0, 0, 0);
 	public Vector3 Offset;
+	public float rangeAmount = 1.0f;
 	public float TurnSpeed = 25.0f;
 	public float MoveSpeed = 25.0f;
 	private Vector3 PrevPos;
@@ -57,9 +58,9 @@ public class TTMovement : NetworkBehaviour {
 		}
 
 		//if it's still far just continue moving
-		if((Mathf.Abs(TargetPos.x-transform.position.x) > 0.01f) || 
-			(Mathf.Abs(TargetPos.y-transform.position.y) > 0.01f) || 
-			(Mathf.Abs(TargetPos.z-transform.position.z) > 0.01f)){
+		if((Mathf.Abs(TargetPos.x-transform.position.x) > 0.01f * rangeAmount) || 
+			(Mathf.Abs(TargetPos.y-transform.position.y) > 0.01f* rangeAmount) || 
+			(Mathf.Abs(TargetPos.z-transform.position.z) > 0.01f* rangeAmount)){
 
 			var lookPos = TargetPos - transform.position;
 			lookPos.y = 0;
