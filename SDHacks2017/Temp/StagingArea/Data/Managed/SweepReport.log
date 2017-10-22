@@ -11,7 +11,7 @@ Summary:
     Generic Abstract Classes = 3
     Attributes = 174
   Total Field Removals = 759
-  Total Method Removals = 12212
+  Total Method Removals = 12211
 ---------------------------------------------------
 ---------------------------------------------------
 Assembly: Mono.Security
@@ -10571,7 +10571,7 @@ Summary:
     Generic Abstract Classes = 0
     Attributes = 48
   Total Field Removals = 34
-  Total Method Removals = 2694
+  Total Method Removals = 2693
   References Removed = 0
 ---------------------------------------------------
     JetBrains.Annotations.AssertionMethodAttribute
@@ -11030,7 +11030,6 @@ Summary:
         get_linear()
         get_magenta()
         get_maxColorComponent()
-        get_red()
         HSVToRGB(System.Single,System.Single,System.Single)
         HSVToRGB(System.Single,System.Single,System.Single,System.Boolean)
         LerpUnclamped(UnityEngine.Color,UnityEngine.Color,System.Single)

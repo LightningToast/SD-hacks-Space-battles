@@ -25,30 +25,48 @@ namespace UnityEngine.XR.iOS
 		// Update is called once per frame
 		void Update () {
 			if (!GameObject.Find ("JPPlayerInput(Clone)")) {
-				if (Input.touchCount > 0 && m_HitTransform != null && !matchStart) {
+				if (Input.touchCount > 0 && m_HitTransform != null) {
 					var touch = Input.GetTouch (0);
-					if (touch.phase == TouchPhase.Began || touch.phase == TouchPhase.Moved) {
-						var screenPosition = Camera.main.ScreenToViewportPoint (touch.position);
-						ARPoint point = new ARPoint {
-							x = screenPosition.x,
-							y = screenPosition.y
-						};
+					if (touch.phase == TouchPhase.Began) {
+						RaycastHit hit;
+						Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+						Debug.DrawRay (ray.origin, ray.direction * 100000, Color.yellow, 0.0f, false);
+						float rayDistance;
+						if (Physics.Raycast (ray, out hit)) {
 
-						// prioritize reults types
-						ARHitTestResultType[] resultTypes = {
-							ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
-							// if you want to use infinite planes use this:
-							//ARHitTestResultType.ARHitTestResultTypeExistingPlane,
-							ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
-							ARHitTestResultType.ARHitTestResultTypeFeaturePoint
-						}; 
-					
-						foreach (ARHitTestResultType resultType in resultTypes) {
-							if (HitTestWithResultType (point, resultType)) {
-								return;
+							if (hit.collider.gameObject == this.gameObject) {
+								this.GetComponent<Renderer>().material.color = Color.red;
+								matchStart = !matchStart;
 							}
 						}
+						if (!matchStart) {
+							var screenPosition = Camera.main.ScreenToViewportPoint (touch.position);
+							ARPoint point = new ARPoint {
+								x = screenPosition.x,
+								y = screenPosition.y
+							};
+
+							// prioritize reults types
+							ARHitTestResultType[] resultTypes = {
+								ARHitTestResultType.ARHitTestResultTypeExistingPlaneUsingExtent, 
+								// if you want to use infinite planes use this:
+								//ARHitTestResultType.ARHitTestResultTypeExistingPlane,
+								ARHitTestResultType.ARHitTestResultTypeHorizontalPlane, 
+								ARHitTestResultType.ARHitTestResultTypeFeaturePoint
+							}; 
+					
+							foreach (ARHitTestResultType resultType in resultTypes) {
+								if (HitTestWithResultType (point, resultType)) {
+									return;
+								}
+							}
+							//matchStart = true;
+						}
+							
+
+
 					}
+
 				}
 			}
 		}

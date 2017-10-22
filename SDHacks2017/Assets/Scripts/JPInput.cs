@@ -19,7 +19,7 @@ public class JPInput : NetworkBehaviour {
 			spawnedShipList = new GameObject[shipList.Length];
 			marker = GameObject.Find("Marker");
 			for(int count = 0; count < shipList.Length; count ++) {
-				GameObject obj = (GameObject)Instantiate (shipList [count], new Vector3 (count * 10, transform.position.y, transform.position.z), transform.rotation);
+				GameObject obj = (GameObject)Instantiate (shipList [count], new Vector3 (0, 0, 0), transform.rotation);
 				obj.name = "Player" + playerNumber + "Ship" + count;
 				//obj.GetComponent<TTMovement> ().shipController = obj.transform.GetChild (0).gameObject;
 				//obj.transform.GetChild (0).gameObject.SetActive(false);

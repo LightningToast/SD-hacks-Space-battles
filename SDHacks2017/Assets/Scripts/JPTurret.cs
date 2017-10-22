@@ -19,11 +19,12 @@ public class JPTurret : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Vector3 distance = target.transform.position - this.transform.position;
-		if((distance.x > 0)&&(distance.x < xDistance)) {
-			if((distance.z < yDistance/xDistance*distance.x)&&(distance.z > -yDistance/xDistance*distance.x)) {
+		if((distance.x > 0)&&(distance.x < xDistance)&&(distance.z < yDistance/xDistance*distance.x)&&(distance.y > -yDistance/xDistance*distance.x)) {
+			
 				print ("Object Found");
 				tracking = true;
-			}
+		} else {
+			tracking = false;
 		}
 		if (!tracking) {
 			currRotation += direction * rotationSpeed;
